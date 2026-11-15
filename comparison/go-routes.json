@@ -1,0 +1,1500 @@
+{
+  "AIGym": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "access": "certificate"
+    },
+    {
+      "method": "POST",
+      "path": "/aigym/samples",
+      "access": "identity",
+      "service": "aiGym",
+      "operation": "add-sample"
+    },
+    {
+      "method": "POST",
+      "path": "/aigym/predict",
+      "access": "identity",
+      "service": "aiGym",
+      "operation": "predict"
+    },
+    {
+      "method": "GET",
+      "path": "/aigym/observations",
+      "access": "identity",
+      "service": "aiGym",
+      "operation": "observations"
+    },
+    {
+      "method": "GET",
+      "path": "/aigym/status",
+      "access": "identity",
+      "service": "aiGym",
+      "operation": "status"
+    },
+    {
+      "method": "GET",
+      "path": "/aigym/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/aigym/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/aigym/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "Blacklist": [
+    {
+      "method": "GET",
+      "path": "/blacklist/check/{systemName}",
+      "access": "identity",
+      "service": "blacklistDiscovery",
+      "operation": "check"
+    },
+    {
+      "method": "GET",
+      "path": "/blacklist/lookup",
+      "access": "identity",
+      "service": "blacklistDiscovery",
+      "operation": "lookup"
+    },
+    {
+      "method": "POST",
+      "path": "/blacklist/mgmt/create",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/blacklist/mgmt/remove",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/blacklist/mgmt/query",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/blacklist/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/blacklist/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/blacklist/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "CertificateAuthority": [
+    {
+      "method": "POST",
+      "path": "/certificate-authority/sign",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/certificate-authority/checkCertificate",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/certificate-authority/crl",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/certificate-authority/mgmt/certificates",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/certificate-authority/mgmt/certificates/{id}",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/certificate-authority/mgmt/keys",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/certificate-authority/mgmt/keys/{id}",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/certificate-authority/mgmt/revocations",
+      "access": "management"
+    },
+    {
+      "method": "PUT",
+      "path": "/certificate-authority/mgmt/keys",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/certificate-authority/checkTrustedKey",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/certificate-authority/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/certificate-authority/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/certificate-authority/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "Choreographer": [
+    {
+      "method": "GET",
+      "path": "/choreographer/mgmt/plans",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/choreographer/mgmt/sessions",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/choreographer/mgmt/session-steps",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/choreographer/mgmt/worklog",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/choreographer/mgmt/executors",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/choreographer/mgmt/plans/{id}",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/choreographer/mgmt/plans/{id}",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/choreographer/mgmt/executors/{id}",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/choreographer/mgmt/executors/{id}",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/choreographer/mgmt/plans",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/choreographer/mgmt/plans/{id}/check",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/choreographer/mgmt/executors",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/choreographer/executor/register",
+      "access": "identity",
+      "service": "choreographerExecutor",
+      "operation": "register"
+    },
+    {
+      "method": "DELETE",
+      "path": "/choreographer/executor/unregister",
+      "access": "identity",
+      "service": "choreographerExecutor",
+      "operation": "unregister"
+    },
+    {
+      "method": "POST",
+      "path": "/choreographer/session/start",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/choreographer/mgmt/sessions/start",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/choreographer/session/abort/{id}",
+      "access": "identity"
+    },
+    {
+      "method": "DELETE",
+      "path": "/choreographer/mgmt/sessions/{id}",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/choreographer/executor/notify-step-done",
+      "access": "identity",
+      "service": "choreographerExecutor",
+      "operation": "notify-step-done"
+    },
+    {
+      "method": "POST",
+      "path": "/choreographer/orchestration-result/{correlationId}",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/choreographer/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/choreographer/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/choreographer/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "Configuration": [
+    {
+      "method": "GET",
+      "path": "/configuration/config/{systemName}",
+      "access": "identity",
+      "service": "configuration",
+      "operation": "get-configuration"
+    },
+    {
+      "method": "GET",
+      "path": "/configuration/proxy/config/{systemName}",
+      "access": "identity",
+      "service": "configurationProxy",
+      "operation": "get-configuration"
+    },
+    {
+      "method": "GET",
+      "path": "/configuration/config/raw/{systemName}",
+      "access": "identity",
+      "service": "configuration",
+      "operation": "get-raw-configuration"
+    },
+    {
+      "method": "PUT",
+      "path": "/configuration/mgmt/config/{systemName}",
+      "access": "management"
+    },
+    {
+      "method": "PUT",
+      "path": "/configuration/proxy/save-config",
+      "access": "identity",
+      "service": "configurationProxy",
+      "operation": "store-configuration"
+    },
+    {
+      "method": "GET",
+      "path": "/configuration/mgmt/config",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/configuration/mgmt/config/{systemName}",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/configuration/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/configuration/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/configuration/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "DataManager": [
+    {
+      "method": "GET",
+      "path": "/datamanager/data-historian/systems",
+      "access": "identity",
+      "service": "dataHistorian",
+      "operation": "list-systems"
+    },
+    {
+      "method": "GET",
+      "path": "/datamanager/data-historian/systems/{systemName}/services",
+      "access": "identity",
+      "service": "dataHistorian",
+      "operation": "list-services"
+    },
+    {
+      "method": "GET",
+      "path": "/datamanager/data-historian/systems/{systemName}/services/{serviceName}/data",
+      "access": "identity",
+      "service": "dataHistorian",
+      "operation": "get-data"
+    },
+    {
+      "method": "PUT",
+      "path": "/datamanager/data-historian/systems/{systemName}/services/{serviceName}/data",
+      "access": "identity",
+      "service": "dataHistorian",
+      "operation": "put-data"
+    },
+    {
+      "method": "GET",
+      "path": "/datamanager/data-proxy/systems",
+      "access": "identity",
+      "service": "dataProxy",
+      "operation": "list-systems"
+    },
+    {
+      "method": "GET",
+      "path": "/datamanager/data-proxy/systems/{systemName}/services",
+      "access": "identity",
+      "service": "dataProxy",
+      "operation": "list-services"
+    },
+    {
+      "method": "GET",
+      "path": "/datamanager/data-proxy/systems/{systemName}/services/{serviceName}/data",
+      "access": "identity",
+      "service": "dataProxy",
+      "operation": "get-data"
+    },
+    {
+      "method": "PUT",
+      "path": "/datamanager/data-proxy/systems/{systemName}/services/{serviceName}/data",
+      "access": "identity",
+      "service": "dataProxy",
+      "operation": "put-data"
+    },
+    {
+      "method": "GET",
+      "path": "/datamanager/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/datamanager/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/datamanager/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "DeviceQoSEvaluator": [
+    {
+      "method": "POST",
+      "path": "/deviceqosevaluator/qualityevaluation/filter",
+      "access": "identity",
+      "service": "qualityEvaluation",
+      "operation": "filter"
+    },
+    {
+      "method": "POST",
+      "path": "/deviceqosevaluator/qualityevaluation/sort",
+      "access": "identity",
+      "service": "qualityEvaluation",
+      "operation": "sort"
+    },
+    {
+      "method": "POST",
+      "path": "/deviceqosevaluator/mgmt/query",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/deviceqosevaluator/mgmt/reload",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/deviceqosevaluator/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/deviceqosevaluator/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/deviceqosevaluator/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "EventHandler": [
+    {
+      "method": "POST",
+      "path": "/eventhandler/event-subscription/subscribe",
+      "access": "identity",
+      "service": "eventSubscription",
+      "operation": "subscribe"
+    },
+    {
+      "method": "DELETE",
+      "path": "/eventhandler/event-subscription/unsubscribe/{subscriptionId}",
+      "access": "identity",
+      "service": "eventSubscription",
+      "operation": "unsubscribe"
+    },
+    {
+      "method": "GET",
+      "path": "/eventhandler/management/subscriptions",
+      "access": "management"
+    },
+    {
+      "method": "PUT",
+      "path": "/eventhandler/management/subscriptions/{subscriptionId}",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/eventhandler/management/subscriptions/{subscriptionId}",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/eventhandler/event-publish/publish",
+      "access": "identity",
+      "service": "eventPublish",
+      "operation": "publish"
+    },
+    {
+      "method": "GET",
+      "path": "/eventhandler/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/eventhandler/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/eventhandler/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "GateTunnel": [
+    {
+      "method": "GET",
+      "path": "/gatetunnel/echo",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/gatetunnel/publickey",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/gatetunnel/connect_provider",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/gatetunnel/connect_consumer",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/gatetunnel/close_sessions",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/gatetunnel/mgmt/sessions",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/gatetunnel/mgmt/sessions/close",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/gatetunnel/intercloud/provider",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/gatetunnel/intercloud/consumer",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/gatetunnel/mgmt/status",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/gatetunnel/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/gatetunnel/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/gatetunnel/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "Gatekeeper": [
+    {
+      "method": "GET",
+      "path": "/gatekeeper/echo",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/gatekeeper/init_gsd",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/gatekeeper/init_multi_gsd",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/gatekeeper/init_icn",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/gatekeeper/mgmt/clouds",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/gatekeeper/mgmt/clouds",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/gatekeeper/mgmt/clouds/{operator}/{name}",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/gatekeeper/mgmt/relays",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/gatekeeper/mgmt/relays",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/gatekeeper/mgmt/status",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/gatekeeper/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/gatekeeper/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/gatekeeper/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "Onboarding": [
+    {
+      "method": "GET",
+      "path": "/onboarding/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/onboarding/mgmt/enrollments",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/onboarding/mgmt/enrollments/{deviceName}",
+      "access": "management"
+    },
+    {
+      "method": "PUT",
+      "path": "/onboarding/mgmt/enrollments/{deviceName}",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/onboarding/certificate/name",
+      "access": "enrollment"
+    },
+    {
+      "method": "POST",
+      "path": "/onboarding/certificate/csr",
+      "access": "enrollment"
+    },
+    {
+      "method": "POST",
+      "path": "/onboarding/device",
+      "access": "enrollment"
+    },
+    {
+      "method": "POST",
+      "path": "/onboarding/system",
+      "access": "enrollment"
+    },
+    {
+      "method": "POST",
+      "path": "/onboarding/device/offboard",
+      "access": "enrollment"
+    },
+    {
+      "method": "POST",
+      "path": "/onboarding/mgmt/enrollments/{deviceName}/offboard",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/onboarding/mgmt/enrollments/{deviceName}",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/onboarding/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/onboarding/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/onboarding/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "PlantDescriptionEngine": [
+    {
+      "method": "GET",
+      "path": "/plantdescriptionengine/mgmt/sync-status",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/plantdescriptionengine/mgmt/plant-descriptions",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/plantdescriptionengine/mgmt/plant-descriptions/{id}",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/plantdescriptionengine/mgmt/plant-descriptions",
+      "access": "management"
+    },
+    {
+      "method": "PUT",
+      "path": "/plantdescriptionengine/mgmt/plant-descriptions/{id}",
+      "access": "management"
+    },
+    {
+      "method": "PATCH",
+      "path": "/plantdescriptionengine/mgmt/plant-descriptions/{id}",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/plantdescriptionengine/mgmt/plant-descriptions/{id}",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/plantdescriptionengine/monitor/plant-descriptions",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/plantdescriptionengine/monitor/plant-descriptions/{id}",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/plantdescriptionengine/monitor/alarms",
+      "access": "identity",
+      "service": "plantDescriptionMonitor",
+      "operation": "query-alarms"
+    },
+    {
+      "method": "GET",
+      "path": "/plantdescriptionengine/monitor/alarms/{id}",
+      "access": "identity",
+      "service": "plantDescriptionMonitor",
+      "operation": "get-alarm"
+    },
+    {
+      "method": "PATCH",
+      "path": "/plantdescriptionengine/monitor/alarms/{id}",
+      "access": "identity",
+      "service": "plantDescriptionMonitor",
+      "operation": "acknowledge-alarm"
+    },
+    {
+      "method": "GET",
+      "path": "/plantdescriptionengine/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/plantdescriptionengine/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/plantdescriptionengine/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "SysMonitor": [
+    {
+      "method": "GET",
+      "path": "/sysmonitor/management/status",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/sysmonitor/management/providers",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/sysmonitor/management/subscriptions",
+      "access": "management"
+    },
+    {
+      "method": "PUT",
+      "path": "/sysmonitor/management/subscriptions/{providerSystem}",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/sysmonitor/management/subscriptions/{providerSystem}",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/sysmonitor/management/reconcile",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/sysmonitor/history/systems",
+      "access": "identity",
+      "service": "sysMonitorHistory",
+      "operation": "list-systems"
+    },
+    {
+      "method": "GET",
+      "path": "/sysmonitor/history/systems/{systemName}/latest",
+      "access": "identity",
+      "service": "sysMonitorHistory",
+      "operation": "latest"
+    },
+    {
+      "method": "GET",
+      "path": "/sysmonitor/history/systems/{systemName}/observations",
+      "access": "identity",
+      "service": "sysMonitorHistory",
+      "operation": "query"
+    },
+    {
+      "method": "GET",
+      "path": "/sysmonitor/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/sysmonitor/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/sysmonitor/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "TestTranslation": [
+    {
+      "method": "POST",
+      "path": "/testtranslation/interface-bridge/check-targets",
+      "access": "identity",
+      "service": "interfaceBridgeManagement",
+      "operation": "check-targets"
+    },
+    {
+      "method": "POST",
+      "path": "/testtranslation/interface-bridge/initialize-bridge",
+      "access": "identity",
+      "service": "interfaceBridgeManagement",
+      "operation": "initialize-bridge"
+    },
+    {
+      "method": "DELETE",
+      "path": "/testtranslation/interface-bridge/abort-bridge/{bridgeId}",
+      "access": "identity",
+      "service": "interfaceBridgeManagement",
+      "operation": "abort-bridge"
+    },
+    {
+      "method": "POST",
+      "path": "/testtranslation/data-model/init-translation",
+      "access": "identity",
+      "service": "dataModelTranslation",
+      "operation": "init-translation"
+    },
+    {
+      "method": "GET",
+      "path": "/testtranslation/data-model/get-translation-result/{translationId}",
+      "access": "identity",
+      "service": "dataModelTranslation",
+      "operation": "get-translation-result"
+    },
+    {
+      "method": "DELETE",
+      "path": "/testtranslation/data-model/abort-translation/{translationId}",
+      "access": "identity",
+      "service": "dataModelTranslation",
+      "operation": "abort-translation"
+    },
+    {
+      "method": "GET",
+      "path": "/testtranslation/bridge/{bridgeId}/{rest...}",
+      "access": "bridge"
+    },
+    {
+      "method": "POST",
+      "path": "/testtranslation/bridge/{bridgeId}/{rest...}",
+      "access": "bridge"
+    },
+    {
+      "method": "PUT",
+      "path": "/testtranslation/bridge/{bridgeId}/{rest...}",
+      "access": "bridge"
+    },
+    {
+      "method": "PATCH",
+      "path": "/testtranslation/bridge/{bridgeId}/{rest...}",
+      "access": "bridge"
+    },
+    {
+      "method": "DELETE",
+      "path": "/testtranslation/bridge/{bridgeId}/{rest...}",
+      "access": "bridge"
+    },
+    {
+      "method": "GET",
+      "path": "/testtranslation/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/testtranslation/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/testtranslation/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "TimeManager": [
+    {
+      "method": "GET",
+      "path": "/timemanager/time",
+      "access": "identity",
+      "service": "time",
+      "operation": "get-time"
+    },
+    {
+      "method": "GET",
+      "path": "/timemanager/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/timemanager/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/timemanager/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "TranslationManager": [
+    {
+      "method": "POST",
+      "path": "/translation/bridge/discovery",
+      "access": "identity",
+      "service": "translationBridge",
+      "operation": "discovery"
+    },
+    {
+      "method": "POST",
+      "path": "/translation/bridge/mgmt/discovery",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/translation/bridge/negotiation",
+      "access": "identity",
+      "service": "translationBridge",
+      "operation": "negotiation"
+    },
+    {
+      "method": "POST",
+      "path": "/translation/bridge/mgmt/negotiation",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/translation/bridge/abort/{bridgeId}",
+      "access": "identity",
+      "service": "translationBridge",
+      "operation": "abort"
+    },
+    {
+      "method": "DELETE",
+      "path": "/translation/bridge/mgmt/abort",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/translation/bridge/mgmt/query",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/translation/event/report",
+      "access": "identity",
+      "service": "translationReport",
+      "operation": "report"
+    },
+    {
+      "method": "GET",
+      "path": "/translation/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/translation/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/translation/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "Authentication": [
+    {
+      "method": "POST",
+      "path": "/authentication/identity/login",
+      "access": "certificate"
+    },
+    {
+      "method": "POST",
+      "path": "/authentication/identity/logout",
+      "access": "certificate"
+    },
+    {
+      "method": "POST",
+      "path": "/authentication/identity/change",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/authentication/identity/verify/{token}",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/authentication/mgmt/identities",
+      "access": "management"
+    },
+    {
+      "method": "PUT",
+      "path": "/authentication/mgmt/identities",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/authentication/mgmt/identities",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/authentication/mgmt/sessions",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/authentication/mgmt/identities/query",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/authentication/mgmt/sessions",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/authentication/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/authentication/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/authentication/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "ConsumerAuthorization": [
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization/grant",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization/mgmt/grant",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/consumerauthorization/authorization/revoke/{instanceId}",
+      "access": "identity"
+    },
+    {
+      "method": "DELETE",
+      "path": "/consumerauthorization/authorization/mgmt/revoke",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization/lookup",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization/mgmt/query",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization/verify",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization/mgmt/check",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization-token/generate",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/consumerauthorization/authorization-token/token/verify/{token}",
+      "access": "identity"
+    },
+    {
+      "method": "GET",
+      "path": "/consumerauthorization/authorization-token/public-key",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization-token/encryption-key",
+      "access": "identity"
+    },
+    {
+      "method": "DELETE",
+      "path": "/consumerauthorization/authorization-token/encryption-key",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization/mgmt/token/generate",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization/mgmt/token/query",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/consumerauthorization/authorization/mgmt/token/revoke",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/authorization/mgmt/token/encryption-key",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/consumerauthorization/authorization/mgmt/token/encryption-key",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/consumerauthorization/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/consumerauthorization/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/consumerauthorization/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "DynamicServiceOrchestration": [
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/pull",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/history/query",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/lock/create",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/lock/query",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceorchestration/orchestration/mgmt/lock/remove/{owner}",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/mgmt/plant-rules/query",
+      "access": "management"
+    },
+    {
+      "method": "PUT",
+      "path": "/serviceorchestration/mgmt/plant-rules/replace",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/subscribe",
+      "access": "identity"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceorchestration/orchestration/unsubscribe/{id}",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/push/subscribe",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/push/query",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceorchestration/orchestration/mgmt/push/unsubscribe",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/push/trigger",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/serviceorchestration/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/serviceorchestration/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "SimpleStoreServiceOrchestration": [
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/pull",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/history/query",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/simple-store/create",
+      "access": "management"
+    },
+    {
+      "method": "PUT",
+      "path": "/serviceorchestration/orchestration/mgmt/simple-store/modify-priorities",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceorchestration/orchestration/mgmt/simple-store/remove",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/simple-store/query",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/subscribe",
+      "access": "identity"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceorchestration/orchestration/unsubscribe/{id}",
+      "access": "identity"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/push/subscribe",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/push/query",
+      "access": "management"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceorchestration/orchestration/mgmt/push/unsubscribe",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/orchestration/mgmt/push/trigger",
+      "access": "management"
+    },
+    {
+      "method": "GET",
+      "path": "/serviceorchestration/monitor/echo",
+      "access": "certificate"
+    },
+    {
+      "method": "GET",
+      "path": "/serviceorchestration/general/mgmt/get-config",
+      "access": "management"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceorchestration/general/mgmt/logs",
+      "access": "management"
+    }
+  ],
+  "ServiceRegistry": [
+    {
+      "method": "GET",
+      "path": "/serviceregistry/monitor/echo"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/device-discovery/register"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/device-discovery/lookup"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceregistry/device-discovery/revoke/{name}"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/system-discovery/register"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/system-discovery/lookup"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceregistry/system-discovery/revoke"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/service-discovery/register"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/service-discovery/lookup"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceregistry/service-discovery/revoke/{instanceId}"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/mgmt/devices/query"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/mgmt/devices"
+    },
+    {
+      "method": "PUT",
+      "path": "/serviceregistry/mgmt/devices"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceregistry/mgmt/devices"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/mgmt/systems/query"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/mgmt/systems"
+    },
+    {
+      "method": "PUT",
+      "path": "/serviceregistry/mgmt/systems"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceregistry/mgmt/systems"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/mgmt/service-definitions/query"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/mgmt/service-definitions"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceregistry/mgmt/service-definitions"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/mgmt/service-instances/query"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/mgmt/service-instances"
+    },
+    {
+      "method": "PUT",
+      "path": "/serviceregistry/mgmt/service-instances"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceregistry/mgmt/service-instances"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/mgmt/interface-templates/query"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/mgmt/interface-templates"
+    },
+    {
+      "method": "DELETE",
+      "path": "/serviceregistry/mgmt/interface-templates"
+    },
+    {
+      "method": "POST",
+      "path": "/serviceregistry/general/mgmt/logs"
+    },
+    {
+      "method": "GET",
+      "path": "/serviceregistry/general/mgmt/get-config"
+    }
+  ]
+}

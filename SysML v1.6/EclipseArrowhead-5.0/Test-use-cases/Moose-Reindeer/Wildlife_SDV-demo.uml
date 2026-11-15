@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ArrowheadDSL="http://www.eclipse.org/papyrus/arrowhead" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+  <uml:Model xmi:id="_yRr-sH3dEfG2JKxOxqFZug" name="Wildlife_SDV-demo">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_yS44k33dEfG2JKxOxqFZug">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_yS7U0H3dEfG2JKxOxqFZug">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_yTLzgH3dEfG2JKxOxqFZug">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AFPVN_LIB/Arrowhead-5.0.uml#_LdWEYCTQEe-9KvpFZizseA"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_KKBa4H3gEfG2JKxOxqFZug">
+      <importedPackage xmi:type="uml:Model" href="../EclipseArrowhead-5.0-JD/Arrowhead-5.0.uml#_LdWEYCTQEe-9KvpFZizseA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Model" xmi:id="_473XsH3dEfG2JKxOxqFZug" name="ControlPlane">
+      <packagedElement xmi:type="uml:Class" xmi:id="_9BLKwH3eEfG2JKxOxqFZug" name="ControlPlane">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NVFosH3gEfG2JKxOxqFZug" name="serviceRegister">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0-JD/Arrowhead-5.0.uml#_30sNUCTQEe-9KvpFZizseA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IYjn0H3hEfG2JKxOxqFZug" name="serviceOrchestration">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0-JD/Arrowhead-5.0.uml#_AQzcoCcDEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_R0COUH3iEfG2JKxOxqFZug" name="consumptionAuthorisation">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0-JD/Arrowhead-5.0.uml#_CbCnJiclEe-kO5sLBQPK1Q"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_H_OywH3qEfG2JKxOxqFZug" name="authentication">
+          <type xmi:type="uml:Class" href="../EclipseArrowhead-5.0-JD/Arrowhead-5.0.uml#_TzZgEDMYEe-MpZcrQa1Yrg"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_B7ZegH3eEfG2JKxOxqFZug" name="DataPlane">
+      <packagedElement xmi:type="uml:Model" xmi:id="__naZ0H92EfGGktlx_2Nfhg" name="Camera">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Z8Y0MH9QEfG9v8ncXpEa3w" name="CameraMicrosystem">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_gst4gH9QEfG9v8ncXpEa3w" name="images" visibility="public" type="_cRgRcH9QEfG9v8ncXpEa3w" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_jeau0H92EfGGktlx_2Nfhg" name="cameraConfig" visibility="public" type="_NCFrsH92EfGGktlx_2Nfhg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_EqWUYIjcEfGVltOOy7e9ew" name="Camera-1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_2Xuu4IjREfGg5o1UyqpxGA"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cRgRcH9QEfG9v8ncXpEa3w" name="images">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_PcQoEH92EfGGktlx_2Nfhg" name="subscribe-frame-stream"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_NCFrsH92EfGGktlx_2Nfhg" name="cameraConfig">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_LvhJMH95EfGGktlx_2Nfhg" name="camera-config"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="__NH_oH94EfGGktlx_2Nfhg" name="imagesWebsocket">
+          <generalization xmi:type="uml:Generalization" xmi:id="_ByQ14H95EfGGktlx_2Nfhg" general="_cRgRcH9QEfG9v8ncXpEa3w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TUOQwH95EfGGktlx_2Nfhg" name="CameraMicrosystem">
+          <generalization xmi:type="uml:Generalization" xmi:id="_UCiIQH95EfGGktlx_2Nfhg" general="_Z8Y0MH9QEfG9v8ncXpEa3w"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_838ukIBVEfGwnaIC4gbrHg" name="imageWebsocket" visibility="public" type="__NH_oH94EfGGktlx_2Nfhg" aggregation="composite" subsettedProperty="_gst4gH9QEfG9v8ncXpEa3w"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_QSCvwIBWEfGwnaIC4gbrHg" name="cemeraConfigHttp" visibility="public" type="_IJoAkH95EfGGktlx_2Nfhg" aggregation="composite" subsettedProperty="_jeau0H92EfGGktlx_2Nfhg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_IJoAkH95EfGGktlx_2Nfhg" name="cameraConfigHttp">
+          <generalization xmi:type="uml:Generalization" xmi:id="_O5t0UH95EfGGktlx_2Nfhg" general="_NCFrsH92EfGGktlx_2Nfhg"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_Eb-VAH93EfGGktlx_2Nfhg" name="MooseReindeerDetector">
+        <packagedElement xmi:type="uml:Class" xmi:id="_xZ19IH9QEfG9v8ncXpEa3w" name="MooseReindeerDetector">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_RGuwYH93EfGGktlx_2Nfhg" name="images" visibility="public" type="_cRgRcH9QEfG9v8ncXpEa3w" aggregation="composite" isConjugated="true"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_gWu6QH94EfGGktlx_2Nfhg" name="detectionResult" visibility="public" type="_c7TxsH93EfGGktlx_2Nfhg" aggregation="composite"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ZbqcIIBVEfGwnaIC4gbrHg" name="detect-deer roadsign"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_bjPMoIBVEfGwnaIC4gbrHg" name="moose-or-reindeer"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Tw5dsImVEfGe37dn6aJitg" name="animal"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_c7TxsH93EfGGktlx_2Nfhg" name="detectonResult">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_jWBLUH93EfGGktlx_2Nfhg" name="subscribe-2-animal-type"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_kOGD8IBVEfGwnaIC4gbrHg" name="subscribe-2-roadsign"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_sF00EH93EfGGktlx_2Nfhg" name="detectionResultCoap">
+          <generalization xmi:type="uml:Generalization" xmi:id="_tKumoH93EfGGktlx_2Nfhg" general="_c7TxsH93EfGGktlx_2Nfhg"/>
+          <redefinedClassifier xmi:type="uml:Enumeration" href="pathmap://Arrowhead_Profile/ArrowheadProfile_v5.0.profile.uml#_g-d3YLaOEe6et-4ox6TWyg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eJyhkH94EfGGktlx_2Nfhg" name="MooseReindeerDetector">
+          <generalization xmi:type="uml:Generalization" xmi:id="_fBzusH94EfGGktlx_2Nfhg" general="_xZ19IH9QEfG9v8ncXpEa3w"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_j_meYH94EfGGktlx_2Nfhg" name="detectionResultsCoap" visibility="public" type="_sF00EH93EfGGktlx_2Nfhg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_wdEEoH94EfGGktlx_2Nfhg" name="imagesCoap" visibility="public" type="_sF00EH93EfGGktlx_2Nfhg" aggregation="composite"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_sex0sH95EfGGktlx_2Nfhg" name="GPS-data">
+        <packagedElement xmi:type="uml:Class" xmi:id="_xcOmIH95EfGGktlx_2Nfhg" name="GPSMicrosystem">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_2ua4gH95EfGGktlx_2Nfhg" name="location" visibility="public" type="_zu4lQH95EfGGktlx_2Nfhg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VwbrkIjcEfGVltOOy7e9ew" name="Gps-1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_ylk2cIjSEfGg5o1UyqpxGA"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_K66fYIdvEfGaveDVpU3yHw" name="repeat every 5 sec"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zu4lQH95EfGGktlx_2Nfhg" name="location">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_E5CO4INxEfGYCPWD85KM3g" name="location-GPS"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Kr17AINxEfGYCPWD85KM3g" name="locationHttp">
+          <generalization xmi:type="uml:Generalization" xmi:id="_MtMHsINxEfGYCPWD85KM3g" general="_zu4lQH95EfGGktlx_2Nfhg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ZY7agINxEfGYCPWD85KM3g" name="ArrowHeadServiceInterfaceHTTP2"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-p4TEINyEfGYCPWD85KM3g" name="GpsMicrosystem">
+          <generalization xmi:type="uml:Generalization" xmi:id="_AUA5oINzEfGYCPWD85KM3g" general="_xcOmIH95EfGGktlx_2Nfhg"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ZQT0YIgvEfGvG8rPci7W4Q" name="locationHttp" visibility="public" type="_Kr17AINxEfGYCPWD85KM3g" aggregation="composite"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_ew98YIDjEfGwnaIC4gbrHg" name="MitigationControler">
+        <packagedElement xmi:type="uml:Class" xmi:id="_mvAJ8IDjEfGwnaIC4gbrHg" name="MitigationControler">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_tS-NQIDjEfGwnaIC4gbrHg" name="location" visibility="public" type="_zu4lQH95EfGGktlx_2Nfhg" aggregation="composite" isConjugated="true"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_2nRZQINLEfGwnaIC4gbrHg" name="chipletFloorplanDeplyment" visibility="public" aggregation="composite">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_UXq1AINOEfGwnaIC4gbrHg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_pcZ9oINPEfGwnaIC4gbrHg" name="cameraConfig" visibility="public" type="_NCFrsH92EfGGktlx_2Nfhg" aggregation="composite" isConjugated="true"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_zUfXkIc1EfGDnd48FmPaJA" name="mitigationAction" visibility="public" type="_qGPykIDjEfGwnaIC4gbrHg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_L_fRsIc2EfGDnd48FmPaJA" name="detectionResult" visibility="public" type="_c7TxsH93EfGGktlx_2Nfhg" aggregation="composite"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_1mvaQIDjEfGwnaIC4gbrHg" name="location-action"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_bNg7EIc2EfGDnd48FmPaJA" name="detection-action"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qGPykIDjEfGwnaIC4gbrHg" name="mitigationAction">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_4GIZYINKEfGwnaIC4gbrHg" name="hardware-action"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Gycx8INNEfGwnaIC4gbrHg" name="software-action"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_I6lCcIDkEfGwnaIC4gbrHg" name="LocationAction">
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_zXTRwIDkEfGwnaIC4gbrHg" name="LocationStateMachine">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_6d8roIaHEfG1u_zpZFx3Bw" name="Choice-1"/>
+            <region xmi:type="uml:Region" xmi:id="_9rb0AIDkEfGwnaIC4gbrHg" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_mRz2oIDuEfGwnaIC4gbrHg" name="IF PowerOn" source="_h0FLQIDnEfGwnaIC4gbrHg" target="_Za744IRyEfGuqcglavX0DQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_jqWTMIRyEfGuqcglavX0DQ" name="Trigger first location data" source="_DtApoIphEfGe37dn6aJitg" target="_20ChkIDoEfGwnaIC4gbrHg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_rxtb4IRyEfGuqcglavX0DQ" name="If location outside MRarea" source="_6d8roIaHEfG1u_zpZFx3Bw" target="_FX4S4IR1EfGuqcglavX0DQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_FeSu0IRzEfGuqcglavX0DQ" name="If location inside MRarea" source="_6d8roIaHEfG1u_zpZFx3Bw" target="_Vfp5oIRzEfGuqcglavX0DQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_xdePYIRzEfGuqcglavX0DQ" name="Trigger first image" source="_DtApoIphEfGe37dn6aJitg" target="_kaLYMIRzEfGuqcglavX0DQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_-5-QwIRzEfGuqcglavX0DQ" name="IF image EQ MRRoadsignVarning THEN cameraConfig-3" source="_7Lp1EIjKEfGg5o1UyqpxGA" target="_mBaHUIDnEfGwnaIC4gbrHg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_upSwMIR2EfGuqcglavX0DQ" name="if cameraConfig-2 sucess THEN deploy chipletFloorPlanB" source="_Vfp5oIRzEfGuqcglavX0DQ" target="_1hCEEIR2EfGuqcglavX0DQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_oO2BcIaIEfG1u_zpZFx3Bw" source="_20ChkIDoEfGwnaIC4gbrHg" target="_6d8roIaHEfG1u_zpZFx3Bw"/>
+              <transition xmi:type="uml:Transition" xmi:id="_xB65QIaLEfG1u_zpZFx3Bw" source="_qv46kINWEfGYCPWD85KM3g" target="_kaLYMIRzEfGuqcglavX0DQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_MnyCAIaMEfG1u_zpZFx3Bw" name="if cameraConfig-3 sucess THEN deploy chipletFloorPlanC" source="_mBaHUIDnEfGwnaIC4gbrHg" target="_qv46kINWEfGYCPWD85KM3g"/>
+              <transition xmi:type="uml:Transition" xmi:id="_2iEnwIaOEfG1u_zpZFx3Bw" name="IF PowerOff" source="_Za744IRyEfGuqcglavX0DQ" target="_G0ipYIDsEfGwnaIC4gbrHg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_BriPgIaPEfG1u_zpZFx3Bw" source="_G0ipYIDsEfGwnaIC4gbrHg" target="__6GuIIaOEfG1u_zpZFx3Bw"/>
+              <transition xmi:type="uml:Transition" xmi:id="_OCEuYIaPEfG1u_zpZFx3Bw" name="Trigger new location data every 5 sec." source="_20ChkIDoEfGwnaIC4gbrHg" target="_20ChkIDoEfGwnaIC4gbrHg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_yxBikIaPEfG1u_zpZFx3Bw" name="IF image EQ animal THEN AnimalDetected" source="_7Lp1EIjKEfGg5o1UyqpxGA" target="_rIfD4IaPEfG1u_zpZFx3Bw"/>
+              <transition xmi:type="uml:Transition" xmi:id="_GeS-cIaQEfG1u_zpZFx3Bw" name="IF reindeer" source="_3ciL8IpfEfGe37dn6aJitg" target="_2x4v8IaPEfG1u_zpZFx3Bw"/>
+              <transition xmi:type="uml:Transition" xmi:id="_Rd11MIaQEfG1u_zpZFx3Bw" name="Trigger reindeer mitigation action" source="_2x4v8IaPEfG1u_zpZFx3Bw" target="_NnnxkIaQEfG1u_zpZFx3Bw"/>
+              <transition xmi:type="uml:Transition" xmi:id="_d7JDYIaQEfG1u_zpZFx3Bw" name="IF Moose" source="_3ciL8IpfEfGe37dn6aJitg" target="_UEPPsIaQEfG1u_zpZFx3Bw"/>
+              <transition xmi:type="uml:Transition" xmi:id="_JmgQEIaREfG1u_zpZFx3Bw" name="Trigger moose mitigation action" source="_UEPPsIaQEfG1u_zpZFx3Bw" target="_FgyX4IaREfG1u_zpZFx3Bw"/>
+              <transition xmi:type="uml:Transition" xmi:id="_ZPAskIduEfGaveDVpU3yHw" name="IF NEQ Moose OR Reindeer" source="_3ciL8IpfEfGe37dn6aJitg" target="_KwOu0IduEfGaveDVpU3yHw"/>
+              <transition xmi:type="uml:Transition" xmi:id="_6y2-wIjDEfGvG8rPci7W4Q" source="_rHJ2sIjKEfGg5o1UyqpxGA" target="_6d8roIaHEfG1u_zpZFx3Bw"/>
+              <transition xmi:type="uml:Transition" xmi:id="_pellIIjEEfGvG8rPci7W4Q" name="IF image (EQ no animal AND location EQ Normal driving) THEN cameraConfig-1" source="_7Lp1EIjKEfGg5o1UyqpxGA" target="_FX4S4IR1EfGuqcglavX0DQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_FJQ8cIjFEfGvG8rPci7W4Q" name="IF image (EQ no animal AND (location EQ MRarea AND location change since MRRoadsignVarning is > 1000m ) THEN cameraConfig-2" source="_7Lp1EIjKEfGg5o1UyqpxGA" target="_Vfp5oIRzEfGuqcglavX0DQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_xWML0IjKEfGg5o1UyqpxGA" source="_NnnxkIaQEfG1u_zpZFx3Bw" target="_rHJ2sIjKEfGg5o1UyqpxGA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_yKXawIjKEfGg5o1UyqpxGA" source="_FgyX4IaREfG1u_zpZFx3Bw" target="_rHJ2sIjKEfGg5o1UyqpxGA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_zAGv8IjKEfGg5o1UyqpxGA" source="_KwOu0IduEfGaveDVpU3yHw" target="_rHJ2sIjKEfGg5o1UyqpxGA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_NjV-EIjLEfGg5o1UyqpxGA" source="_kaLYMIRzEfGuqcglavX0DQ" target="_7Lp1EIjKEfGg5o1UyqpxGA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_O049AIphEfGe37dn6aJitg" name="Trigger first  Location and Camera data" source="_Za744IRyEfGuqcglavX0DQ" target="_DtApoIphEfGe37dn6aJitg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_xhleMIpkEfGe37dn6aJitg" name="IF chipletFloorPlan NEQ chipletFloorpaln-C THEN chipletFloorpaln-C" source="_91YVoIplEfGe37dn6aJitg" target="_qv46kINWEfGYCPWD85KM3g"/>
+              <transition xmi:type="uml:Transition" xmi:id="_T1B5QIplEfGe37dn6aJitg" source="_qv46kINWEfGYCPWD85KM3g" target="_3ciL8IpfEfGe37dn6aJitg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_GMXOsIpmEfGe37dn6aJitg" source="_rIfD4IaPEfG1u_zpZFx3Bw" target="_91YVoIplEfGe37dn6aJitg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_H7Y8UIpmEfGe37dn6aJitg" name="IF chipletFloorPlan EQ chipletFloorpaln-C THEN Choice-4" source="_91YVoIplEfGe37dn6aJitg" target="_3ciL8IpfEfGe37dn6aJitg"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_h0FLQIDnEfGwnaIC4gbrHg" name="VehiclePowerOff"/>
+              <subvertex xmi:type="uml:State" xmi:id="_mBaHUIDnEfGwnaIC4gbrHg" name="cameraConfig-3"/>
+              <subvertex xmi:type="uml:State" xmi:id="_G0ipYIDsEfGwnaIC4gbrHg" name="VehiclePowerOff"/>
+              <subvertex xmi:type="uml:State" xmi:id="_qv46kINWEfGYCPWD85KM3g" name="chipletFlooplanC"/>
+              <subvertex xmi:type="uml:State" xmi:id="_20ChkIDoEfGwnaIC4gbrHg" name="NewLocationData" redefinedState="_20ChkIDoEfGwnaIC4gbrHg"/>
+              <subvertex xmi:type="uml:State" xmi:id="_ys3GQIDnEfGwnaIC4gbrHg" name="Normal driving">
+                <region xmi:type="uml:Region" xmi:id="_FX12oIR1EfGuqcglavX0DQ" name="Region1">
+                  <transition xmi:type="uml:Transition" xmi:id="_zV9lkIR0EfGuqcglavX0DQ" name="if cameraConfig-1 sucess THEN deploy chipletFloorPlanA" source="_FX4S4IR1EfGuqcglavX0DQ" target="_wRQecIR0EfGuqcglavX0DQ"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_Kgr9MIaNEfG1u_zpZFx3Bw" name="NewCameraImage as per current cameraConfig" source="_wRQecIR0EfGuqcglavX0DQ" target="_kaLYMIRzEfGuqcglavX0DQ"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_FX4S4IR1EfGuqcglavX0DQ" name="cameraConfig-1"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_wRQecIR0EfGuqcglavX0DQ" name="chipletFloorplanA"/>
+                </region>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_Za744IRyEfGuqcglavX0DQ" name="VehiclePowerOn"/>
+              <subvertex xmi:type="uml:State" xmi:id="_91290IRyEfGuqcglavX0DQ" name="MRarea">
+                <region xmi:type="uml:Region" xmi:id="_xzk64IR2EfGuqcglavX0DQ" name="Region2">
+                  <transition xmi:type="uml:Transition" xmi:id="_HWggMIaNEfG1u_zpZFx3Bw" source="_1hCEEIR2EfGuqcglavX0DQ" target="_kaLYMIRzEfGuqcglavX0DQ"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_1hCEEIR2EfGuqcglavX0DQ" name="chipletFloorplan-B"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_Vfp5oIRzEfGuqcglavX0DQ" name="cameraConfig-2"/>
+                </region>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_kaLYMIRzEfGuqcglavX0DQ" name="NewCameraImage"/>
+              <subvertex xmi:type="uml:FinalState" xmi:id="__6GuIIaOEfG1u_zpZFx3Bw" name="VehiclePowerOff"/>
+              <subvertex xmi:type="uml:State" xmi:id="_rIfD4IaPEfG1u_zpZFx3Bw" name="AnimalDetected"/>
+              <subvertex xmi:type="uml:State" xmi:id="_2x4v8IaPEfG1u_zpZFx3Bw" name="Reindeer detected"/>
+              <subvertex xmi:type="uml:State" xmi:id="_NnnxkIaQEfG1u_zpZFx3Bw" name="Reindeer mitgation action"/>
+              <subvertex xmi:type="uml:State" xmi:id="_UEPPsIaQEfG1u_zpZFx3Bw" name="Moose detected"/>
+              <subvertex xmi:type="uml:State" xmi:id="_FgyX4IaREfG1u_zpZFx3Bw" name="Moose motogation action"/>
+              <subvertex xmi:type="uml:State" xmi:id="_KwOu0IduEfGaveDVpU3yHw" name="NoMRDetected"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_rHJ2sIjKEfGg5o1UyqpxGA" name="Join"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_7Lp1EIjKEfGg5o1UyqpxGA" name="Choice-2"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_3ciL8IpfEfGe37dn6aJitg" name="Choice-4"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_DtApoIphEfGe37dn6aJitg" name="Fork"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_91YVoIplEfGe37dn6aJitg" name="Choice-3"/>
+            </region>
+          </ownedBehavior>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_9K_IcINMEfGwnaIC4gbrHg" name="MitigationControler">
+          <generalization xmi:type="uml:Generalization" xmi:id="_AuqDgINNEfGwnaIC4gbrHg" general="_mvAJ8IDjEfGwnaIC4gbrHg"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_C7ANAIg0EfGvG8rPci7W4Q" name="mitigationActionHttp" visibility="public" type="_CPKM8INNEfGwnaIC4gbrHg" aggregation="composite" subsettedProperty="_zUfXkIc1EfGDnd48FmPaJA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CPKM8INNEfGwnaIC4gbrHg" name="mitigationActionHttp">
+          <generalization xmi:type="uml:Generalization" xmi:id="_DLOMkINNEfGwnaIC4gbrHg" general="_qGPykIDjEfGwnaIC4gbrHg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Activity" xmi:id="_mgUMAIR4EfGuqcglavX0DQ" name="Activity8"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_DbFcQINHEfGwnaIC4gbrHg" name="MR-DataPlan">
+        <packagedElement xmi:type="uml:Class" xmi:id="_94ICoINJEfGwnaIC4gbrHg" name="MR-DataPlane" classifierBehavior="_1bnWMIRCEfGuqcglavX0DQ">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NSXjEINKEfGwnaIC4gbrHg" name="Property1" type="_Z8Y0MH9QEfG9v8ncXpEa3w"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SgFlIINKEfGwnaIC4gbrHg" name="Property2" type="_xZ19IH9QEfG9v8ncXpEa3w"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_akoqYINKEfGwnaIC4gbrHg" name="Property3" type="_xcOmIH95EfGGktlx_2Nfhg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_f-x-4INKEfGwnaIC4gbrHg" name="Property4" type="_mvAJ8IDjEfGwnaIC4gbrHg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UXIQMINTEfGs15J_2dfYyQ" name="Property7">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_yIsKACEzEfGhoazAM1qygA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TxwkMIgzEfGvG8rPci7W4Q" name="Property12" type="_QcAGMIdrEfGaveDVpU3yHw"/>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_myMzcINKEfGwnaIC4gbrHg" name="image service consumption">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_myOBkINKEfGwnaIC4gbrHg" partWithPort="_NSXjEINKEfGwnaIC4gbrHg" role="_gst4gH9QEfG9v8ncXpEa3w"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_myOooINKEfGwnaIC4gbrHg" partWithPort="_SgFlIINKEfGwnaIC4gbrHg" role="_RGuwYH93EfGGktlx_2Nfhg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_nt2jYINKEfGwnaIC4gbrHg" name="location service consumption">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_nt4YkINKEfGwnaIC4gbrHg" partWithPort="_akoqYINKEfGwnaIC4gbrHg" role="_2ua4gH95EfGGktlx_2Nfhg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_nt4YkYNKEfGwnaIC4gbrHg" partWithPort="_f-x-4INKEfGwnaIC4gbrHg" role="_tS-NQIDjEfGwnaIC4gbrHg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_1ypkwINTEfGs15J_2dfYyQ" name="cameraConfig service consumption">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_1yqy4INTEfGs15J_2dfYyQ" partWithPort="_NSXjEINKEfGwnaIC4gbrHg" role="_jeau0H92EfGGktlx_2Nfhg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_1yqy4YNTEfGs15J_2dfYyQ" partWithPort="_f-x-4INKEfGwnaIC4gbrHg" role="_pcZ9oINPEfGwnaIC4gbrHg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_4vphYINTEfGs15J_2dfYyQ" name="chipletFloorplanDeployment service consumption">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_4vqIcINTEfGs15J_2dfYyQ" partWithPort="_UXIQMINTEfGs15J_2dfYyQ">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_prjpYINOEfGwnaIC4gbrHg"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_4vqIcYNTEfGs15J_2dfYyQ" partWithPort="_f-x-4INKEfGwnaIC4gbrHg" role="_2nRZQINLEfGwnaIC4gbrHg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_y17D4IdDEfGHKvyHppo14A" name="detectionResult service consumption">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_y1-HMIdDEfGHKvyHppo14A" partWithPort="_SgFlIINKEfGwnaIC4gbrHg" role="_gWu6QH94EfGGktlx_2Nfhg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_y1-uQIdDEfGHKvyHppo14A" role="_L_fRsIc2EfGDnd48FmPaJA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_eBXLwIgzEfGvG8rPci7W4Q" name="Connector13">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_eBYZ4IgzEfGvG8rPci7W4Q" partWithPort="_f-x-4INKEfGwnaIC4gbrHg" role="_zUfXkIc1EfGDnd48FmPaJA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_eBZA8IgzEfGvG8rPci7W4Q" partWithPort="_TxwkMIgzEfGvG8rPci7W4Q" role="_VOPGIIdrEfGaveDVpU3yHw"/>
+          </ownedConnector>
+          <ownedBehavior xmi:type="uml:Interaction" xmi:id="_1bnWMIRCEfGuqcglavX0DQ" name="MR-SD">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_SnQHgIdEEfGHKvyHppo14A">
+              <body>Camera SysD</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7cNu0IdEEfGHKvyHppo14A">
+              <body>Mitigationcontroler SysD</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_q8jFIIdJEfGHKvyHppo14A">
+              <body>MooseReindeerDetector
+SysD</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_yiC24IdJEfGHKvyHppo14A">
+              <body>Mitigation Controler SysD
+</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_P145gIdMEfGHKvyHppo14A">
+              <body>Camera SysD</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_VrtdYIdMEfGHKvyHppo14A">
+              <body>ChipletNetworkManager SysD</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_JsvDwIdpEfGaveDVpU3yHw">
+              <body>Changed computational power to MoosereindeerDetector SysD
+Floorplan compute capacity A, B=2xA, C=4xA
+ </body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zXlCwIgwEfGvG8rPci7W4Q">
+              <body>MitigationActor SysD</body>
+            </ownedComment>
+            <ownedRule xmi:type="uml:TimeConstraint" xmi:id="_iAIysIdoEfGaveDVpU3yHw" name="repeat as defined by cameraConfig" constrainedElement="_y0ymAIdEEfGHKvyHppo14A">
+              <specification xmi:type="uml:TimeInterval" xmi:id="_iAMdEIdoEfGaveDVpU3yHw"/>
+            </ownedRule>
+            <ownedRule xmi:type="uml:TimeConstraint" xmi:id="_vYCZMIduEfGaveDVpU3yHw" name="Repeat every 5 sec" constrainedElement="_oYu5QIRDEfGuqcglavX0DQ">
+              <specification xmi:type="uml:TimeInterval" xmi:id="_vYE1cIduEfGaveDVpU3yHw"/>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9CScUIdmEfGaveDVpU3yHw" name="" type="_1bnWMIRCEfGuqcglavX0DQ"/>
+            <generalOrdering xmi:type="uml:GeneralOrdering" xmi:id="_QtBvIIdHEfGHKvyHppo14A" after="_y0x-8IdEEfGHKvyHppo14A" before="_-hcysIdKEfGHKvyHppo14A"/>
+            <generalOrdering xmi:type="uml:GeneralOrdering" xmi:id="_WzXJUIdJEfGHKvyHppo14A" after="_cwd2YIdIEfGHKvyHppo14A" before="_y1KZcIdEEfGHKvyHppo14A"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_F1P3EIRDEfGuqcglavX0DQ" name="Lifeline1" represents="_2ua4gH95EfGGktlx_2Nfhg" coveredBy="_oYwucIRDEfGuqcglavX0DQ _oZtJoIRDEfGuqcglavX0DQ _oZjYoIRDEfGuqcglavX0DQ"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_RaMg8IRDEfGuqcglavX0DQ" name="Lifeline2" represents="_tS-NQIDjEfGwnaIC4gbrHg" coveredBy="_oYu5QIRDEfGuqcglavX0DQ _y9DzoIRDEfGuqcglavX0DQ _y9AwUIRDEfGuqcglavX0DQ _oZtwsIRDEfGuqcglavX0DQ _sKgtQIduEfGaveDVpU3yHw _sKZ_kIduEfGaveDVpU3yHw _UoKgUIaJEfG1u_zpZFx3Bw _UogekoaJEfG1u_zpZFx3Bw"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_aJj-QIaHEfG1u_zpZFx3Bw" name="Lifeline13" represents="_jeau0H92EfGGktlx_2Nfhg" coveredBy="_UoLHYIaJEfG1u_zpZFx3Bw _5299YIdGEfGHKvyHppo14A _UogekYaJEfG1u_zpZFx3Bw _53Vw0IdGEfGHKvyHppo14A _ahBnsIdmEfGaveDVpU3yHw _ahuLQYdmEfGaveDVpU3yHw _Uoc0MIaJEfG1u_zpZFx3Bw"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_VC52IIc6EfGRwsgjapBXSQ" name="Lifeline22" represents="_gst4gH9QEfG9v8ncXpEa3w" coveredBy="_y0ymAIdEEfGHKvyHppo14A _y1JyYIdEEfGHKvyHppo14A _y1E54IdEEfGHKvyHppo14A"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_4mYKIIdEEfGHKvyHppo14A" name="Lifeline29" represents="_RGuwYH93EfGGktlx_2Nfhg" coveredBy="_y0x-8IdEEfGHKvyHppo14A _x40loIdHEfGHKvyHppo14A _x43B4IdHEfGHKvyHppo14A _y1KZcIdEEfGHKvyHppo14A"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_hU-OQIdGEfGHKvyHppo14A" name="Lifeline31" represents="_jeau0H92EfGGktlx_2Nfhg" coveredBy="_52-kcIdGEfGHKvyHppo14A _53VJwYdGEfGHKvyHppo14A _ahBnsYdmEfGaveDVpU3yHw _ahuLQIdmEfGaveDVpU3yHw _53SGcIdGEfGHKvyHppo14A _ahqg4IdmEfGaveDVpU3yHw"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_apIy8IdHEfGHKvyHppo14A" name="Lifeline40" represents="_gWu6QH94EfGGktlx_2Nfhg" coveredBy="_x40loIdHEfGHKvyHppo14A _x43B4IdHEfGHKvyHppo14A _cwd2YIdIEfGHKvyHppo14A"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_PCJsQIdIEfGHKvyHppo14A" name="Lifeline42" represents="_L_fRsIc2EfGDnd48FmPaJA" coveredBy="__yfrYIdsEfGaveDVpU3yHw __yhgkIdsEfGaveDVpU3yHw _cwedcIdIEfGHKvyHppo14A"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_R7WcEIdKEfGHKvyHppo14A" name="Lifeline52" coveredBy="_-gxdQIdKEfGHKvyHppo14A _-hcysIdKEfGHKvyHppo14A _0tHhIIdmEfGaveDVpU3yHw _0toegYdmEfGaveDVpU3yHw _-hYhQIdKEfGHKvyHppo14A _0tnQYIdmEfGaveDVpU3yHw">
+              <represents xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_prjpYINOEfGwnaIC4gbrHg"/>
+            </lifeline>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_9CROMIdmEfGaveDVpU3yHw" name="" represents="_9CScUIdmEfGaveDVpU3yHw"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_gwXCUIdnEfGaveDVpU3yHw" name="Lifeline76" represents="_2nRZQINLEfGwnaIC4gbrHg" coveredBy="_-gwPIIdKEfGHKvyHppo14A _-hcysYdKEfGHKvyHppo14A _0tG6EIdmEfGaveDVpU3yHw _0toegodmEfGaveDVpU3yHw"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_3Tp-MIdpEfGaveDVpU3yHw" name="Lifeline80" represents="_zUfXkIc1EfGDnd48FmPaJA" coveredBy="_NBQBIIdsEfGaveDVpU3yHw _NCR74IdsEfGaveDVpU3yHw _NCNqcIdsEfGaveDVpU3yHw"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_afOpMIdsEfGaveDVpU3yHw" name="Lifeline87" represents="_zUfXkIc1EfGDnd48FmPaJA" coveredBy="__yfrYIdsEfGaveDVpU3yHw __yhgkIdsEfGaveDVpU3yHw _tRoYQIdsEfGaveDVpU3yHw _tRnKIIdsEfGaveDVpU3yHw _tRo_UIdsEfGaveDVpU3yHw _NBOzAIdsEfGaveDVpU3yHw _NCSi8IdsEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oYu5QIRDEfGuqcglavX0DQ" name="Message3SendEvent" covered="_RaMg8IRDEfGuqcglavX0DQ" message="_oYnkgIRDEfGuqcglavX0DQ"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_sKZ_kIduEfGaveDVpU3yHw" name="BehaviorExecutionSpecification90" covered="_RaMg8IRDEfGuqcglavX0DQ" finish="_sKgtQIduEfGaveDVpU3yHw" start="_oYu5QIRDEfGuqcglavX0DQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oYwucIRDEfGuqcglavX0DQ" name="Message3ReceiveEvent" covered="_F1P3EIRDEfGuqcglavX0DQ" message="_oYnkgIRDEfGuqcglavX0DQ"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_oZjYoIRDEfGuqcglavX0DQ" name="BehaviorExecutionSpecification6" covered="_F1P3EIRDEfGuqcglavX0DQ" finish="_oZtJoIRDEfGuqcglavX0DQ" start="_oYwucIRDEfGuqcglavX0DQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oZtJoIRDEfGuqcglavX0DQ" name="Message8SendEvent" covered="_F1P3EIRDEfGuqcglavX0DQ" message="_oZrUcIRDEfGuqcglavX0DQ"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_y9DzoIRDEfGuqcglavX0DQ" name="ActionExecutionSpecification10Start" covered="_RaMg8IRDEfGuqcglavX0DQ" execution="_y9AwUIRDEfGuqcglavX0DQ"/>
+            <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_y9AwUIRDEfGuqcglavX0DQ" name="If location in MR area update camera config to: cameraConfig-2 else cameraConfig-1 " covered="_RaMg8IRDEfGuqcglavX0DQ" finish="_UoKgUIaJEfG1u_zpZFx3Bw" start="_y9DzoIRDEfGuqcglavX0DQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oZtwsIRDEfGuqcglavX0DQ" name="Message8ReceiveEvent" covered="_RaMg8IRDEfGuqcglavX0DQ" message="_oZrUcIRDEfGuqcglavX0DQ"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_sKgtQIduEfGaveDVpU3yHw" name="BehaviorExecutionSpecification90Finish" covered="_RaMg8IRDEfGuqcglavX0DQ" execution="_sKZ_kIduEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UoKgUIaJEfG1u_zpZFx3Bw" name="Message14SendEvent" covered="_RaMg8IRDEfGuqcglavX0DQ" message="_UoIEEIaJEfG1u_zpZFx3Bw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UoLHYIaJEfG1u_zpZFx3Bw" name="Message14ReceiveEvent" covered="_aJj-QIaHEfG1u_zpZFx3Bw" message="_UoIEEIaJEfG1u_zpZFx3Bw"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Uoc0MIaJEfG1u_zpZFx3Bw" name="POST cameraConfig" covered="_aJj-QIaHEfG1u_zpZFx3Bw" finish="_UogekYaJEfG1u_zpZFx3Bw" start="_UoLHYIaJEfG1u_zpZFx3Bw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5299YIdGEfGHKvyHppo14A" name="Message32SendEvent" covered="_aJj-QIaHEfG1u_zpZFx3Bw" message="_527hIIdGEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_52-kcIdGEfGHKvyHppo14A" name="Message32ReceiveEvent" covered="_hU-OQIdGEfGHKvyHppo14A" message="_527hIIdGEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_53SGcIdGEfGHKvyHppo14A" name="BehaviorExecutionSpecification35" covered="_hU-OQIdGEfGHKvyHppo14A" finish="_53VJwYdGEfGHKvyHppo14A" start="_52-kcIdGEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UogekYaJEfG1u_zpZFx3Bw" name="Message18SendEvent" covered="_aJj-QIaHEfG1u_zpZFx3Bw" message="_UogekIaJEfG1u_zpZFx3Bw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UogekoaJEfG1u_zpZFx3Bw" name="Message18ReceiveEvent" covered="_RaMg8IRDEfGuqcglavX0DQ" message="_UogekIaJEfG1u_zpZFx3Bw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_53VJwYdGEfGHKvyHppo14A" name="Message37SendEvent" covered="_hU-OQIdGEfGHKvyHppo14A" message="_53VJwIdGEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_53Vw0IdGEfGHKvyHppo14A" name="Message37ReceiveEvent" covered="_aJj-QIaHEfG1u_zpZFx3Bw" message="_53VJwIdGEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-gwPIIdKEfGHKvyHppo14A" name="Message53SendEvent" covered="_gwXCUIdnEfGaveDVpU3yHw" message="_-guZ8IdKEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-gxdQIdKEfGHKvyHppo14A" name="Message53ReceiveEvent" covered="_R7WcEIdKEfGHKvyHppo14A" message="_-guZ8IdKEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_-hYhQIdKEfGHKvyHppo14A" name="BehaviorExecutionSpecification56" covered="_R7WcEIdKEfGHKvyHppo14A" finish="_-hcysIdKEfGHKvyHppo14A" start="_-gxdQIdKEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-hcysIdKEfGHKvyHppo14A" name="Message58SendEvent" covered="_R7WcEIdKEfGHKvyHppo14A" toAfter="_QtBvIIdHEfGHKvyHppo14A" message="_-hbkkIdKEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-hcysYdKEfGHKvyHppo14A" name="Message58ReceiveEvent" covered="_gwXCUIdnEfGaveDVpU3yHw" message="_-hbkkIdKEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_y0x-8IdEEfGHKvyHppo14A" name="Message22SendEvent" covered="_4mYKIIdEEfGHKvyHppo14A" toBefore="_QtBvIIdHEfGHKvyHppo14A" message="_y0u7oIdEEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_y0ymAIdEEfGHKvyHppo14A" name="Message22ReceiveEvent" covered="_VC52IIc6EfGRwsgjapBXSQ" message="_y0u7oIdEEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_y1E54IdEEfGHKvyHppo14A" name="repeat as defined by cameraConfig" covered="_VC52IIc6EfGRwsgjapBXSQ" finish="_y1JyYIdEEfGHKvyHppo14A" start="_y0ymAIdEEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_x40loIdHEfGHKvyHppo14A" name="CombinedFragment41" covered="_apIy8IdHEfGHKvyHppo14A _4mYKIIdEEfGHKvyHppo14A">
+              <operand xmi:type="uml:InteractionOperand" xmi:id="_x43B4IdHEfGHKvyHppo14A" name="InteractionOperand0" covered="_apIy8IdHEfGHKvyHppo14A _4mYKIIdEEfGHKvyHppo14A">
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_y1KZcIdEEfGHKvyHppo14A" name="Message27ReceiveEvent" covered="_4mYKIIdEEfGHKvyHppo14A" toAfter="_WzXJUIdJEfGHKvyHppo14A" message="_y1JLUIdEEfGHKvyHppo14A"/>
+                <guard xmi:type="uml:InteractionConstraint" xmi:id="_x43B4YdHEfGHKvyHppo14A" name="guard"/>
+              </operand>
+            </fragment>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_y1JyYIdEEfGHKvyHppo14A" name="Message27SendEvent" covered="_VC52IIc6EfGRwsgjapBXSQ" message="_y1JLUIdEEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="__yfrYIdsEfGaveDVpU3yHw" name="CombinedFragment89" covered="_PCJsQIdIEfGHKvyHppo14A _afOpMIdsEfGaveDVpU3yHw">
+              <operand xmi:type="uml:InteractionOperand" xmi:id="__yhgkIdsEfGaveDVpU3yHw" name="InteractionOperand0" covered="_PCJsQIdIEfGHKvyHppo14A _afOpMIdsEfGaveDVpU3yHw">
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cwedcIdIEfGHKvyHppo14A" name="Message43ReceiveEvent" covered="_PCJsQIdIEfGHKvyHppo14A" message="_cwcBMIdIEfGHKvyHppo14A"/>
+                <guard xmi:type="uml:InteractionConstraint" xmi:id="__yhgkYdsEfGaveDVpU3yHw" name="guard"/>
+              </operand>
+            </fragment>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cwd2YIdIEfGHKvyHppo14A" name="Message43SendEvent" covered="_apIy8IdHEfGHKvyHppo14A" toBefore="_WzXJUIdJEfGHKvyHppo14A" message="_cwcBMIdIEfGHKvyHppo14A"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ahBnsIdmEfGaveDVpU3yHw" name="Message58SendEvent" covered="_aJj-QIaHEfG1u_zpZFx3Bw" message="_ag8IIIdmEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ahBnsYdmEfGaveDVpU3yHw" name="Message58ReceiveEvent" covered="_hU-OQIdGEfGHKvyHppo14A" message="_ag8IIIdmEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ahqg4IdmEfGaveDVpU3yHw" name="BehaviorExecutionSpecification61" covered="_hU-OQIdGEfGHKvyHppo14A" finish="_ahuLQIdmEfGaveDVpU3yHw" start="_ahBnsYdmEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ahuLQIdmEfGaveDVpU3yHw" name="Message63SendEvent" covered="_hU-OQIdGEfGHKvyHppo14A" message="_ahtkMIdmEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ahuLQYdmEfGaveDVpU3yHw" name="Message63ReceiveEvent" covered="_aJj-QIaHEfG1u_zpZFx3Bw" message="_ahtkMIdmEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_tRoYQIdsEfGaveDVpU3yHw" name="ActionExecutionSpecification89Start" covered="_afOpMIdsEfGaveDVpU3yHw" execution="_tRnKIIdsEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_tRnKIIdsEfGaveDVpU3yHw" name="ActionExecutionSpecification89" covered="_afOpMIdsEfGaveDVpU3yHw" finish="_tRo_UIdsEfGaveDVpU3yHw" start="_tRoYQIdsEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0tG6EIdmEfGaveDVpU3yHw" name="Message65SendEvent" covered="_gwXCUIdnEfGaveDVpU3yHw" message="_0tFr8IdmEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0tHhIIdmEfGaveDVpU3yHw" name="Message65ReceiveEvent" covered="_R7WcEIdKEfGHKvyHppo14A" message="_0tFr8IdmEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0tnQYIdmEfGaveDVpU3yHw" name="BehaviorExecutionSpecification68" covered="_R7WcEIdKEfGHKvyHppo14A" finish="_0toegYdmEfGaveDVpU3yHw" start="_0tHhIIdmEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0toegYdmEfGaveDVpU3yHw" name="Message70SendEvent" covered="_R7WcEIdKEfGHKvyHppo14A" message="_0toegIdmEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0toegodmEfGaveDVpU3yHw" name="Message70ReceiveEvent" covered="_gwXCUIdnEfGaveDVpU3yHw" message="_0toegIdmEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_tRo_UIdsEfGaveDVpU3yHw" name="ActionExecutionSpecification89Finish" covered="_afOpMIdsEfGaveDVpU3yHw" execution="_tRnKIIdsEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NBOzAIdsEfGaveDVpU3yHw" name="Message81SendEvent" covered="_afOpMIdsEfGaveDVpU3yHw" message="_NBM90IdsEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NBQBIIdsEfGaveDVpU3yHw" name="Message81ReceiveEvent" covered="_3Tp-MIdpEfGaveDVpU3yHw" message="_NBM90IdsEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NCNqcIdsEfGaveDVpU3yHw" name="IF animal EQ Reindeer THEN POST Reindeer mitigation action ELSEIF animal EQ Moose THEN POST Mosse mitigation action ELSE Normal Driving" covered="_3Tp-MIdpEfGaveDVpU3yHw" finish="_NCR74IdsEfGaveDVpU3yHw" start="_NBQBIIdsEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NCR74IdsEfGaveDVpU3yHw" name="Message85SendEvent" covered="_3Tp-MIdpEfGaveDVpU3yHw" message="_NCRU0IdsEfGaveDVpU3yHw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NCSi8IdsEfGaveDVpU3yHw" name="Message85ReceiveEvent" covered="_afOpMIdsEfGaveDVpU3yHw" message="_NCRU0IdsEfGaveDVpU3yHw"/>
+            <message xmi:type="uml:Message" xmi:id="_oYnkgIRDEfGuqcglavX0DQ" name="GET gps location data" receiveEvent="_oYwucIRDEfGuqcglavX0DQ" sendEvent="_oYu5QIRDEfGuqcglavX0DQ"/>
+            <message xmi:type="uml:Message" xmi:id="_oZrUcIRDEfGuqcglavX0DQ" name="gps location data" messageSort="reply" receiveEvent="_oZtwsIRDEfGuqcglavX0DQ" sendEvent="_oZtJoIRDEfGuqcglavX0DQ"/>
+            <message xmi:type="uml:Message" xmi:id="_UoIEEIaJEfG1u_zpZFx3Bw" name="If location in MR area update camera config to: cameraConfig-2 else cameraConfig-1 " receiveEvent="_UoLHYIaJEfG1u_zpZFx3Bw" sendEvent="_UoKgUIaJEfG1u_zpZFx3Bw"/>
+            <message xmi:type="uml:Message" xmi:id="_UogekIaJEfG1u_zpZFx3Bw" name="Sucess/fail" messageSort="reply" receiveEvent="_UogekoaJEfG1u_zpZFx3Bw" sendEvent="_UogekYaJEfG1u_zpZFx3Bw"/>
+            <message xmi:type="uml:Message" xmi:id="_y0u7oIdEEfGHKvyHppo14A" name="GET next image" connector="_nt2jYINKEfGwnaIC4gbrHg" receiveEvent="_y0ymAIdEEfGHKvyHppo14A" sendEvent="_y0x-8IdEEfGHKvyHppo14A"/>
+            <message xmi:type="uml:Message" xmi:id="_y1JLUIdEEfGHKvyHppo14A" name="imageData" messageSort="reply" receiveEvent="_y1KZcIdEEfGHKvyHppo14A" sendEvent="_y1JyYIdEEfGHKvyHppo14A"/>
+            <message xmi:type="uml:Message" xmi:id="_527hIIdGEfGHKvyHppo14A" name="POST cameraConfig" connector="_1ypkwINTEfGs15J_2dfYyQ" receiveEvent="_52-kcIdGEfGHKvyHppo14A" sendEvent="_5299YIdGEfGHKvyHppo14A"/>
+            <message xmi:type="uml:Message" xmi:id="_53VJwIdGEfGHKvyHppo14A" name="success/fail" messageSort="reply" receiveEvent="_53Vw0IdGEfGHKvyHppo14A" sendEvent="_53VJwYdGEfGHKvyHppo14A"/>
+            <message xmi:type="uml:Message" xmi:id="_cwcBMIdIEfGHKvyHppo14A" name="POST animal type and roadsign type" connector="_y17D4IdDEfGHKvyHppo14A" messageSort="asynchCall" receiveEvent="_cwedcIdIEfGHKvyHppo14A" sendEvent="_cwd2YIdIEfGHKvyHppo14A"/>
+            <message xmi:type="uml:Message" xmi:id="_-guZ8IdKEfGHKvyHppo14A" name="IF cameraConfig-1  THEN POST Floorplan-A ELSIF cameraConfig-2 THEN POST Floorplan-B" connector="_4vphYINTEfGs15J_2dfYyQ" receiveEvent="_-gxdQIdKEfGHKvyHppo14A" sendEvent="_-gwPIIdKEfGHKvyHppo14A"/>
+            <message xmi:type="uml:Message" xmi:id="_-hbkkIdKEfGHKvyHppo14A" name="Message58" messageSort="reply" receiveEvent="_-hcysYdKEfGHKvyHppo14A" sendEvent="_-hcysIdKEfGHKvyHppo14A"/>
+            <message xmi:type="uml:Message" xmi:id="_ag8IIIdmEfGaveDVpU3yHw" name="IF roadsign type  EQ MRRoadsignVerning THEN POST cameraConfig-3" connector="_1ypkwINTEfGs15J_2dfYyQ" receiveEvent="_ahBnsYdmEfGaveDVpU3yHw" sendEvent="_ahBnsIdmEfGaveDVpU3yHw"/>
+            <message xmi:type="uml:Message" xmi:id="_ahtkMIdmEfGaveDVpU3yHw" name="success/fail" messageSort="reply" receiveEvent="_ahuLQYdmEfGaveDVpU3yHw" sendEvent="_ahuLQIdmEfGaveDVpU3yHw"/>
+            <message xmi:type="uml:Message" xmi:id="_0tFr8IdmEfGaveDVpU3yHw" name="IF cameraConfig-3 success THEN POST chipletFloorPlan-C" connector="_4vphYINTEfGs15J_2dfYyQ" receiveEvent="_0tHhIIdmEfGaveDVpU3yHw" sendEvent="_0tG6EIdmEfGaveDVpU3yHw"/>
+            <message xmi:type="uml:Message" xmi:id="_0toegIdmEfGaveDVpU3yHw" name="Success/Fail" connector="_4vphYINTEfGs15J_2dfYyQ" messageSort="reply" receiveEvent="_0toegodmEfGaveDVpU3yHw" sendEvent="_0toegYdmEfGaveDVpU3yHw"/>
+            <message xmi:type="uml:Message" xmi:id="_NBM90IdsEfGaveDVpU3yHw" name="IF animal EQ Reindeer THEN POST Reindeer mitigation action ELSEIF animal EQ Moose THEN POST Mosse mitigation action ELSE Normal Driving" receiveEvent="_NBQBIIdsEfGaveDVpU3yHw" sendEvent="_NBOzAIdsEfGaveDVpU3yHw"/>
+            <message xmi:type="uml:Message" xmi:id="_NCRU0IdsEfGaveDVpU3yHw" name="success/fail" messageSort="reply" receiveEvent="_NCSi8IdsEfGaveDVpU3yHw" sendEvent="_NCR74IdsEfGaveDVpU3yHw"/>
+          </ownedBehavior>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_CtxboIdrEfGaveDVpU3yHw" name="MitigationActor">
+        <packagedElement xmi:type="uml:Class" xmi:id="_QcAGMIdrEfGaveDVpU3yHw" name="MitigationActor">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_VOPGIIdrEfGaveDVpU3yHw" name="MitigationAction" visibility="public" type="_qGPykIDjEfGwnaIC4gbrHg" aggregation="composite" isConjugated="true"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_scU9YIdrEfGaveDVpU3yHw" name="reindeer-mitigation"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_v87WUIdrEfGaveDVpU3yHw" name="moose-mitigation"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_ldrFsIjKEfGg5o1UyqpxGA" name="Floorplans">
+        <packagedElement xmi:type="uml:Class" xmi:id="_1Tf5cIjLEfGg5o1UyqpxGA" name="Floorplan-A">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_vM5bsIjYEfGVltOOy7e9ew">
+            <body>IP blocks useed by other processes</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BYdgIIjMEfGg5o1UyqpxGA" name="CPU1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_H5hzIBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_h5AaMIjMEfGg5o1UyqpxGA" name="XPU1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOG-oBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7KYX0IjMEfGg5o1UyqpxGA" name="XPU2">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOG-oBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_iDEDMIjOEfGg5o1UyqpxGA" name="XPU3">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOG-oBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_t6zXIIjXEfGSP857xRLLwA" name="Camera-1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_2Xuu4IjREfGg5o1UyqpxGA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_t60lQIjXEfGSP857xRLLwA" name="GPS-1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_ylk2cIjSEfGg5o1UyqpxGA"/>
+          </ownedAttribute>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_Q8tbsIjNEfGg5o1UyqpxGA" name="Connector4">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Q8vQ4IjNEfGg5o1UyqpxGA" partWithPort="_BYdgIIjMEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Q8vQ4YjNEfGg5o1UyqpxGA" partWithPort="_h5AaMIjMEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_5QepIB4fEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_Vtx-AIjNEfGg5o1UyqpxGA" name="Connector5">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_VtylEIjNEfGg5o1UyqpxGA" partWithPort="_BYdgIIjMEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_VtylEYjNEfGg5o1UyqpxGA" partWithPort="_h5AaMIjMEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOHlsBMdEfGYFdzyhwQL7Q"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_LBUk4IjZEfGVltOOy7e9ew" name="Connector10">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_LBY2UIjZEfGVltOOy7e9ew" partWithPort="_t6zXIIjXEfGSP857xRLLwA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_2Xuu4ojREfGg5o1UyqpxGA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_LBZdYIjZEfGVltOOy7e9ew" partWithPort="_BYdgIIjMEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_SqG7MIjZEfGVltOOy7e9ew" name="Connector11">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_SqIJUIjZEfGVltOOy7e9ew" partWithPort="_t6zXIIjXEfGSP857xRLLwA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_2Xuu4YjREfGg5o1UyqpxGA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_SqIJUYjZEfGVltOOy7e9ew" partWithPort="_BYdgIIjMEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_ZBCoEIjZEfGVltOOy7e9ew" name="Connector12">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_ZBDPIIjZEfGVltOOy7e9ew" partWithPort="_BYdgIIjMEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_ZBDPIYjZEfGVltOOy7e9ew" partWithPort="_t60lQIjXEfGSP857xRLLwA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_ylk2cojSEfGg5o1UyqpxGA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_b4BcQIjZEfGVltOOy7e9ew" name="Connector13">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_b4CDUIjZEfGVltOOy7e9ew" partWithPort="_BYdgIIjMEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_b4CDUYjZEfGVltOOy7e9ew" partWithPort="_t60lQIjXEfGSP857xRLLwA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_ylk2cYjSEfGg5o1UyqpxGA"/>
+            </end>
+          </ownedConnector>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ylUKAIjNEfGg5o1UyqpxGA" name="Floorplan-B">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_S89JQIjaEfGVltOOy7e9ew">
+            <body>IP blocks useed by other processes</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9i21oIjNEfGg5o1UyqpxGA" name="CPU1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_H5hzIBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9i3csIjNEfGg5o1UyqpxGA" name="XPU1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOG-oBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9i3csYjNEfGg5o1UyqpxGA" name="XPU2">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOG-oBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4g1QwIjOEfGg5o1UyqpxGA" name="XPU3">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOG-oBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_soRYQIjXEfGSP857xRLLwA" name="Camera-1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_2Xuu4IjREfGg5o1UyqpxGA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_soR_UIjXEfGSP857xRLLwA" name="GPS-1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_ylk2cIjSEfGg5o1UyqpxGA"/>
+          </ownedAttribute>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_n-j70IjPEfGg5o1UyqpxGA" name="Connector5">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_n-lxAIjPEfGg5o1UyqpxGA" partWithPort="_9i21oIjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_n-lxAYjPEfGg5o1UyqpxGA" partWithPort="_9i3csIjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_5QepIB4fEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_trebUIjPEfGg5o1UyqpxGA" name="Connector6">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_trfCYIjPEfGg5o1UyqpxGA" partWithPort="_9i21oIjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_trfCYYjPEfGg5o1UyqpxGA" partWithPort="_9i3csYjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_5QepIB4fEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_0MyMMIjPEfGg5o1UyqpxGA" name="Connector7">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_0MzaUIjPEfGg5o1UyqpxGA" partWithPort="_9i21oIjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_0MzaUYjPEfGg5o1UyqpxGA" partWithPort="_9i3csIjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOHlsBMdEfGYFdzyhwQL7Q"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_5Qf9sIjPEfGg5o1UyqpxGA" name="Connector8">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_5QhL0IjPEfGg5o1UyqpxGA" partWithPort="_9i21oIjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_5Qhy4IjPEfGg5o1UyqpxGA" partWithPort="_9i3csYjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOHlsBMdEfGYFdzyhwQL7Q"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_hGyxwIjaEfGVltOOy7e9ew" name="Connector13">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_hGz_4IjaEfGVltOOy7e9ew" partWithPort="_soRYQIjXEfGSP857xRLLwA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_2Xuu4YjREfGg5o1UyqpxGA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_hG0m8IjaEfGVltOOy7e9ew" partWithPort="_9i21oIjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_u61JYIjaEfGVltOOy7e9ew" name="Connector14">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_u62XgIjaEfGVltOOy7e9ew" partWithPort="_9i21oIjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_u62XgYjaEfGVltOOy7e9ew" partWithPort="_soR_UIjXEfGSP857xRLLwA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_ylk2cojSEfGg5o1UyqpxGA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_yA2fIIjaEfGVltOOy7e9ew" name="Connector15">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_yA3GMIjaEfGVltOOy7e9ew" partWithPort="_9i21oIjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_yA3GMYjaEfGVltOOy7e9ew" partWithPort="_soR_UIjXEfGSP857xRLLwA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_ylk2cYjSEfGg5o1UyqpxGA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_Gi61AIjbEfGVltOOy7e9ew" name="Connector15">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Gi8DIIjbEfGVltOOy7e9ew" partWithPort="_9i21oIjNEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Gi8DIYjbEfGVltOOy7e9ew" partWithPort="_soRYQIjXEfGSP857xRLLwA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_2Xuu4ojREfGg5o1UyqpxGA"/>
+            </end>
+          </ownedConnector>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_2W8BgIjNEfGg5o1UyqpxGA" name="Floorplan-C">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ljk-YIjOEfGg5o1UyqpxGA" name="CPU1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_H5hzIBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LjllcIjOEfGg5o1UyqpxGA" name="XPU1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOG-oBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LjllcYjOEfGg5o1UyqpxGA" name="XPU2">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOG-oBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5EeJUIjOEfGg5o1UyqpxGA" name="XPU3">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOG-oBMdEfGYFdzyhwQL7Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yZtIMIjTEfGg5o1UyqpxGA" name="Camera-1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_2Xuu4IjREfGg5o1UyqpxGA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ap-ogIjXEfGSP857xRLLwA" name="GPS-1">
+            <type xmi:type="uml:Class" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_ylk2cIjSEfGg5o1UyqpxGA"/>
+          </ownedAttribute>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_YItoAIjQEfGg5o1UyqpxGA" name="Connector5">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_YIu2IIjQEfGg5o1UyqpxGA" partWithPort="_Ljk-YIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_YIu2IYjQEfGg5o1UyqpxGA" partWithPort="_LjllcIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_5QepIB4fEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_bGrN8IjQEfGg5o1UyqpxGA" name="Connector6">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_bGtDIIjQEfGg5o1UyqpxGA" partWithPort="_Ljk-YIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_bGtDIYjQEfGg5o1UyqpxGA" partWithPort="_LjllcIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOHlsBMdEfGYFdzyhwQL7Q"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_panNoIjQEfGg5o1UyqpxGA" name="Connector7">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_pan0sIjQEfGg5o1UyqpxGA" partWithPort="_Ljk-YIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_pan0sYjQEfGg5o1UyqpxGA" partWithPort="_LjllcYjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_5QepIB4fEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_5R52cIjQEfGg5o1UyqpxGA" name="Connector8">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_5R6dgIjQEfGg5o1UyqpxGA" partWithPort="_Ljk-YIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_5R6dgYjQEfGg5o1UyqpxGA" partWithPort="_LjllcYjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOHlsBMdEfGYFdzyhwQL7Q"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_GvmxsIjREfGg5o1UyqpxGA" name="Connector9">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Gvn_0IjREfGg5o1UyqpxGA" partWithPort="_Ljk-YIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Gvn_0YjREfGg5o1UyqpxGA" partWithPort="_5EeJUIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_5QepIB4fEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_J6SlAIjREfGg5o1UyqpxGA" name="Connector10">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_J6UaMIjREfGg5o1UyqpxGA" partWithPort="_Ljk-YIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_J6UaMYjREfGg5o1UyqpxGA" partWithPort="_5EeJUIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_jOHlsBMdEfGYFdzyhwQL7Q"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_tODGMIjUEfGg5o1UyqpxGA" name="Connector12">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_tOEUUIjUEfGg5o1UyqpxGA" partWithPort="_yZtIMIjTEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_2Xuu4ojREfGg5o1UyqpxGA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_tOEUUYjUEfGg5o1UyqpxGA" partWithPort="_Ljk-YIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_v52lIIjUEfGg5o1UyqpxGA" name="Connector13">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_v53zQIjUEfGg5o1UyqpxGA" partWithPort="_yZtIMIjTEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_2Xuu4YjREfGg5o1UyqpxGA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_v53zQYjUEfGg5o1UyqpxGA" partWithPort="_Ljk-YIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_LDXeMIjXEfGSP857xRLLwA" name="Connector16">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_LDZTYIjXEfGSP857xRLLwA" partWithPort="_Ap-ogIjXEfGSP857xRLLwA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_ylk2cojSEfGg5o1UyqpxGA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_LDZTYYjXEfGSP857xRLLwA" partWithPort="_Ljk-YIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_n3yUcB4eEfGVDLFwyFVUEA"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_UaKOcIjXEfGSP857xRLLwA" name="Connector17">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_UaK1gIjXEfGSP857xRLLwA" partWithPort="_Ljk-YIjOEfGg5o1UyqpxGA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_xV4cAB4dEfGVDLFwyFVUEA"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_UaK1gYjXEfGSP857xRLLwA" partWithPort="_Ap-ogIjXEfGSP857xRLLwA">
+              <role xmi:type="uml:Port" href="../ChipletContorlPlane/ChipletContorlPlane.uml#_ylk2cYjSEfGg5o1UyqpxGA"/>
+            </end>
+          </ownedConnector>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ySB88H3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ySCkAH3dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/arrowhead#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Arrowhead_Profile/ArrowheadProfile_v5.0.profile.uml#_sX4gkDIREe6ldMRwfXEyUg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yS3DYH3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yS3qcH3dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yS3qcX3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yS3qcn3dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yS4RgH3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yS4RgX3dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yS4Rgn3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yS4Rg33dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yS4RhH3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yS4RhX3dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yS4Rhn3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yS4Rh33dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yS4RiH3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yS4RiX3dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yS4Rin3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yS4Ri33dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yS4RjH3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yS44kH3dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yS44kX3dEfG2JKxOxqFZug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yS44kn3dEfG2JKxOxqFZug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_7sLxsIDnEfGwnaIC4gbrHg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7sO1AIDnEfGwnaIC4gbrHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ArrowheadDSL:SysD xmi:id="_9BO1IH3eEfG2JKxOxqFZug" base_Class="_9BLKwH3eEfG2JKxOxqFZug"/>
+  <ArrowheadDSL:SysD xmi:id="_Z8hXEH9QEfG9v8ncXpEa3w" base_Class="_Z8Y0MH9QEfG9v8ncXpEa3w"/>
+  <ArrowheadDSL:SD xmi:id="_cRjUwH9QEfG9v8ncXpEa3w" base_Class="_cRgRcH9QEfG9v8ncXpEa3w"/>
+  <ArrowheadDSL:FullPort xmi:id="_gsxi4H9QEfG9v8ncXpEa3w" base_Port="_gst4gH9QEfG9v8ncXpEa3w"/>
+  <ArrowheadDSL:SysD xmi:id="_xZ3yUH9QEfG9v8ncXpEa3w" base_Class="_xZ19IH9QEfG9v8ncXpEa3w"/>
+  <ArrowheadDSL:SD xmi:id="_NCNngH92EfGGktlx_2Nfhg" base_Class="_NCFrsH92EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:FullPort xmi:id="_jefnUH92EfGGktlx_2Nfhg" base_Port="_jeau0H92EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:FullPort xmi:id="_RGzB0H93EfGGktlx_2Nfhg" base_Port="_RGuwYH93EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:SD xmi:id="_c7bGcH93EfGGktlx_2Nfhg" base_Class="_c7TxsH93EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:IDD xmi:id="_sF33YH93EfGGktlx_2Nfhg" base_Class="_sF00EH93EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:SysDD xmi:id="_eJ3aEH94EfGGktlx_2Nfhg" base_Class="_eJyhkH94EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:FullPort xmi:id="_gWykoH94EfGGktlx_2Nfhg" base_Port="_gWu6QH94EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:FullPort xmi:id="_j_phsH94EfGGktlx_2Nfhg" base_Port="_j_meYH94EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:FullPort xmi:id="_wdHH8H94EfGGktlx_2Nfhg" base_Port="_wdEEoH94EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:IDD xmi:id="__NMREH94EfGGktlx_2Nfhg" base_Class="__NH_oH94EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:IDD xmi:id="_IJqc0H95EfGGktlx_2Nfhg" base_Class="_IJoAkH95EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:SysDD xmi:id="_TUR7IH95EfGGktlx_2Nfhg" base_Class="_TUOQwH95EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:SysD xmi:id="_xcRpcH95EfGGktlx_2Nfhg" base_Class="_xcOmIH95EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:SD xmi:id="_zu7BgH95EfGGktlx_2Nfhg" base_Class="_zu4lQH95EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:FullPort xmi:id="_2uei4H95EfGGktlx_2Nfhg" base_Port="_2ua4gH95EfGGktlx_2Nfhg"/>
+  <ArrowheadDSL:FullPort xmi:id="_84DcQIBVEfGwnaIC4gbrHg" base_Port="_838ukIBVEfGwnaIC4gbrHg"/>
+  <ArrowheadDSL:FullPort xmi:id="_QSGaIIBWEfGwnaIC4gbrHg" base_Port="_QSCvwIBWEfGwnaIC4gbrHg"/>
+  <ArrowheadDSL:SysD xmi:id="_mvFpgIDjEfGwnaIC4gbrHg" base_Class="_mvAJ8IDjEfGwnaIC4gbrHg"/>
+  <ArrowheadDSL:SD xmi:id="_qGTc8IDjEfGwnaIC4gbrHg" base_Class="_qGPykIDjEfGwnaIC4gbrHg"/>
+  <ArrowheadDSL:FullPort xmi:id="_tTB3oIDjEfGwnaIC4gbrHg" base_Port="_tS-NQIDjEfGwnaIC4gbrHg"/>
+  <Blocks:Block xmi:id="_I6m3oIDkEfGwnaIC4gbrHg" base_Class="_I6lCcIDkEfGwnaIC4gbrHg"/>
+  <ArrowheadDSL:LocalCloudDesign xmi:id="_94NiMINJEfGwnaIC4gbrHg" base_Class="_94ICoINJEfGwnaIC4gbrHg" LC_Name="MR-DataPlane"/>
+  <ArrowheadDSL:FullPort xmi:id="_2nVqsINLEfGwnaIC4gbrHg" base_Port="_2nRZQINLEfGwnaIC4gbrHg"/>
+  <ArrowheadDSL:SysDD xmi:id="_9LDZ4INMEfGwnaIC4gbrHg" base_Class="_9K_IcINMEfGwnaIC4gbrHg"/>
+  <ArrowheadDSL:IDD xmi:id="_CPOeYINNEfGwnaIC4gbrHg" base_Class="_CPKM8INNEfGwnaIC4gbrHg"/>
+  <ArrowheadDSL:FullPort xmi:id="_pccZ4INPEfGwnaIC4gbrHg" base_Port="_pcZ9oINPEfGwnaIC4gbrHg"/>
+  <ArrowheadDSL:IDD xmi:id="_Kr8BoINxEfGYCPWD85KM3g" base_Class="_Kr17AINxEfGYCPWD85KM3g"/>
+  <ArrowheadDSL:ArrowHeadServiceInterfaceHTTP xmi:id="_ZY-d0INxEfGYCPWD85KM3g" base_Operation="_ZY7agINxEfGYCPWD85KM3g"/>
+  <ArrowheadDSL:SysDD xmi:id="_-p79cINyEfGYCPWD85KM3g" base_Class="_-p4TEINyEfGYCPWD85KM3g"/>
+  <ArrowheadDSL:FullPort xmi:id="_zUhz0Ic1EfGDnd48FmPaJA" base_Port="_zUfXkIc1EfGDnd48FmPaJA"/>
+  <ArrowheadDSL:FullPort xmi:id="_L_jjIIc2EfGDnd48FmPaJA" base_Port="_L_fRsIc2EfGDnd48FmPaJA"/>
+  <ArrowheadDSL:SysD xmi:id="_QcIpEIdrEfGaveDVpU3yHw" base_Class="_QcAGMIdrEfGaveDVpU3yHw"/>
+  <ArrowheadDSL:FullPort xmi:id="_VOVMwIdrEfGaveDVpU3yHw" base_Port="_VOPGIIdrEfGaveDVpU3yHw"/>
+  <ArrowheadDSL:FullPort xmi:id="_ZQbwMIgvEfGvG8rPci7W4Q" base_Port="_ZQT0YIgvEfGvG8rPci7W4Q"/>
+  <ArrowheadDSL:FullPort xmi:id="_C7EecIg0EfGvG8rPci7W4Q" base_Port="_C7ANAIg0EfGvG8rPci7W4Q"/>
+  <ArrowheadDSL:LocalCloudDesign xmi:id="_1TmAEIjLEfGg5o1UyqpxGA" base_Class="_1Tf5cIjLEfGg5o1UyqpxGA" LC_Name="Floorplan-A"/>
+  <ArrowheadDSL:LocalCloudDesign xmi:id="_ylZCgIjNEfGg5o1UyqpxGA" base_Class="_ylUKAIjNEfGg5o1UyqpxGA" LC_Name="Floorplan-B"/>
+  <ArrowheadDSL:LocalCloudDesign xmi:id="_2W_E0IjNEfGg5o1UyqpxGA" base_Class="_2W8BgIjNEfGg5o1UyqpxGA" LC_Name="Floorplan-C"/>
+</xmi:XMI>

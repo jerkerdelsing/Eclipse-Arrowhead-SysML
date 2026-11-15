@@ -1,0 +1,857 @@
+[
+  {
+    "system": "ServiceRegistry",
+    "language": "Go",
+    "status": "source-route-declarations",
+    "referenceCount": 29,
+    "matches": 29,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/serviceregistry/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "ServiceRegistry",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 29,
+    "matches": 29,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/serviceregistry/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "Authentication",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 12,
+    "matches": 12,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/authentication/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "Authentication",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 12,
+    "matches": 12,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/authentication/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "ConsumerAuthorization",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 20,
+    "matches": 20,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/consumerauthorization/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "ConsumerAuthorization",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 20,
+    "matches": 20,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/consumerauthorization/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "DynamicServiceOrchestration",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 15,
+    "matches": 15,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/serviceorchestration/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "DynamicServiceOrchestration",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 15,
+    "matches": 15,
+    "javaOnly": [],
+    "nativeOnly": [],
+    "unsupported": []
+  },
+  {
+    "system": "SimpleStoreServiceOrchestration",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 14,
+    "matches": 14,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/serviceorchestration/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "SimpleStoreServiceOrchestration",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 14,
+    "matches": 14,
+    "javaOnly": [],
+    "nativeOnly": [],
+    "unsupported": []
+  },
+  {
+    "system": "AIGym",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 4,
+    "matches": 4,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/aigym/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/aigym/monitor/echo"
+      },
+      {
+        "method": "GET",
+        "path": "/health"
+      },
+      {
+        "method": "POST",
+        "path": "/aigym/general/mgmt/logs"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "AIGym",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 4,
+    "matches": 4,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/aigym/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/aigym/monitor/echo"
+      },
+      {
+        "method": "GET",
+        "path": "/health"
+      },
+      {
+        "method": "POST",
+        "path": "/aigym/general/mgmt/logs"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "Blacklist",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 7,
+    "matches": 7,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/blacklist/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "Blacklist",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 7,
+    "matches": 7,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/blacklist/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "CertificateAuthority",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 10,
+    "matches": 10,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/certificate-authority/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/certificate-authority/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/certificate-authority/general/mgmt/logs"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "CertificateAuthority",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 10,
+    "matches": 10,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/certificate-authority/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/certificate-authority/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/certificate-authority/general/mgmt/logs"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "Choreographer",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 21,
+    "matches": 21,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/choreographer/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/choreographer/orchestration-result/{}"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "Choreographer",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 21,
+    "matches": 21,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/choreographer/monitor/echo"
+      }
+    ],
+    "unsupported": [
+      {
+        "access": "identity",
+        "implemented": false,
+        "method": "POST",
+        "operation": "orchestration-result",
+        "path": "/choreographer/orchestration-result/{correlationId}",
+        "service": "choreographerSession"
+      }
+    ]
+  },
+  {
+    "system": "Configuration",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 9,
+    "matches": 9,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/configuration/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "Configuration",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 9,
+    "matches": 9,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/configuration/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "DataManager",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 9,
+    "matches": 8,
+    "javaOnly": [
+      {
+        "method": "GET",
+        "path": "/datamanager/mgmt/general/status"
+      }
+    ],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/datamanager/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/datamanager/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/datamanager/general/mgmt/logs"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "DataManager",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 9,
+    "matches": 8,
+    "javaOnly": [
+      {
+        "method": "GET",
+        "path": "/datamanager/mgmt/general/status"
+      }
+    ],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/datamanager/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/datamanager/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/datamanager/general/mgmt/logs"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "DeviceQoSEvaluator",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 6,
+    "matches": 6,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/deviceqosevaluator/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "DeviceQoSEvaluator",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 6,
+    "matches": 6,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/deviceqosevaluator/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "EventHandler",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 8,
+    "matches": 8,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/eventhandler/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "EventHandler",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 8,
+    "matches": 8,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/eventhandler/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "GateTunnel",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 9,
+    "matches": 9,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/gatetunnel/echo"
+      },
+      {
+        "method": "GET",
+        "path": "/gatetunnel/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/gatetunnel/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/gatetunnel/general/mgmt/logs"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "GateTunnel",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 9,
+    "matches": 9,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/gatetunnel/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/gatetunnel/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/gatetunnel/general/mgmt/logs"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "Gatekeeper",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 6,
+    "matches": 6,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "DELETE",
+        "path": "/gatekeeper/mgmt/clouds/{}/{}"
+      },
+      {
+        "method": "GET",
+        "path": "/gatekeeper/echo"
+      },
+      {
+        "method": "GET",
+        "path": "/gatekeeper/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/gatekeeper/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/gatekeeper/general/mgmt/logs"
+      },
+      {
+        "method": "POST",
+        "path": "/gatekeeper/mgmt/clouds"
+      },
+      {
+        "method": "POST",
+        "path": "/gatekeeper/mgmt/relays"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "Gatekeeper",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 6,
+    "matches": 6,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "DELETE",
+        "path": "/gatekeeper/mgmt/clouds/{}/{}"
+      },
+      {
+        "method": "GET",
+        "path": "/gatekeeper/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/gatekeeper/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/gatekeeper/general/mgmt/logs"
+      },
+      {
+        "method": "POST",
+        "path": "/gatekeeper/mgmt/clouds"
+      },
+      {
+        "method": "POST",
+        "path": "/gatekeeper/mgmt/relays"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "GraphDBManager",
+    "language": "Go",
+    "status": "no-system-folder",
+    "referenceCount": 8
+  },
+  {
+    "system": "GraphDBManager",
+    "language": "Rust",
+    "status": "no-system-folder",
+    "referenceCount": 8
+  },
+  {
+    "system": "LocalCloudConfigurator",
+    "language": "Go",
+    "status": "not-evaluated",
+    "referenceCount": 12
+  },
+  {
+    "system": "LocalCloudConfigurator",
+    "language": "Rust",
+    "status": "no-system-folder",
+    "referenceCount": 12
+  },
+  {
+    "system": "LocalCloudManager",
+    "language": "Go",
+    "status": "not-evaluated",
+    "referenceCount": 20
+  },
+  {
+    "system": "LocalCloudManager",
+    "language": "Rust",
+    "status": "not-evaluated",
+    "referenceCount": 20
+  },
+  {
+    "system": "Onboarding",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 12,
+    "matches": 12,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/onboarding/echo"
+      },
+      {
+        "method": "GET",
+        "path": "/onboarding/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "Onboarding",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 12,
+    "matches": 12,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/onboarding/echo"
+      },
+      {
+        "method": "GET",
+        "path": "/onboarding/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "PlantDescriptionEngine",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 13,
+    "matches": 13,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/plantdescriptionengine/mgmt/sync-status"
+      },
+      {
+        "method": "GET",
+        "path": "/plantdescriptionengine/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "PlantDescriptionEngine",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 13,
+    "matches": 13,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/plantdescriptionengine/mgmt/sync-status"
+      },
+      {
+        "method": "GET",
+        "path": "/plantdescriptionengine/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "SoLocalCloudConfigurator",
+    "language": "Go",
+    "status": "no-system-folder",
+    "referenceCount": 14
+  },
+  {
+    "system": "SoLocalCloudConfigurator",
+    "language": "Rust",
+    "status": "no-system-folder",
+    "referenceCount": 14
+  },
+  {
+    "system": "SoSConfigurator",
+    "language": "Go",
+    "status": "no-system-folder",
+    "referenceCount": 8
+  },
+  {
+    "system": "SoSConfigurator",
+    "language": "Rust",
+    "status": "no-system-folder",
+    "referenceCount": 8
+  },
+  {
+    "system": "SysMonitor",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 12,
+    "matches": 9,
+    "javaOnly": [
+      {
+        "method": "GET",
+        "path": "/sysmonitor/mgmt/general/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/sysmonitor/mgmt/general/status"
+      },
+      {
+        "method": "POST",
+        "path": "/sysmonitor/mgmt/general/logs"
+      }
+    ],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/sysmonitor/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/sysmonitor/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/sysmonitor/general/mgmt/logs"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "SysMonitor",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 12,
+    "matches": 9,
+    "javaOnly": [
+      {
+        "method": "GET",
+        "path": "/sysmonitor/mgmt/general/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/sysmonitor/mgmt/general/status"
+      },
+      {
+        "method": "POST",
+        "path": "/sysmonitor/mgmt/general/logs"
+      }
+    ],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/sysmonitor/general/mgmt/get-config"
+      },
+      {
+        "method": "GET",
+        "path": "/sysmonitor/monitor/echo"
+      },
+      {
+        "method": "POST",
+        "path": "/sysmonitor/general/mgmt/logs"
+      },
+      {
+        "method": "POST",
+        "path": "/sysmonitor/observations"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "TimeManager",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 3,
+    "matches": 3,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/timemanager/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "TimeManager",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 3,
+    "matches": 3,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/timemanager/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "TranslationManager",
+    "language": "Go",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 10,
+    "matches": 10,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/translation/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  },
+  {
+    "system": "TranslationManager",
+    "language": "Rust",
+    "status": "runtime-route-catalogue",
+    "referenceCount": 10,
+    "matches": 10,
+    "javaOnly": [],
+    "nativeOnly": [
+      {
+        "method": "GET",
+        "path": "/translation/monitor/echo"
+      }
+    ],
+    "unsupported": []
+  }
+]

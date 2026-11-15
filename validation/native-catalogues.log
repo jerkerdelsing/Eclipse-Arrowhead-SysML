@@ -1,0 +1,33 @@
+warning: struct `Service` is never constructed
+  --> src/core.rs:15:12
+   |
+15 | pub struct Service {
+   |            ^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `services` is never used
+   --> src/core.rs:192:8
+    |
+192 | pub fn services(role: &str) -> Vec<Service> {
+    |        ^^^^^^^^
+
+warning: struct `Service` is never constructed
+  --> src/support.rs:15:12
+   |
+15 | pub struct Service {
+   |            ^^^^^^^
+
+warning: function `services` is never used
+   --> src/support.rs:315:8
+    |
+315 | pub fn services(role: &str) -> Vec<Service> {
+    |        ^^^^^^^^
+
+warning: function `data_models` is never used
+   --> src/support.rs:337:8
+    |
+337 | pub fn data_models(role: &str, definition: &str) -> Option<Value> {
+    |        ^^^^^^^^^^^
+
+Extracted and compared HTTP routes for 25 Java systems.

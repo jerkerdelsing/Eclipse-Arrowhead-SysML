@@ -1,0 +1,55 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/Applications/Eclipse-2503.app/Contents/Eclipse/plugins/com.google.inject_7.0.0.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+LOADED 143
+CHECKING ArrowheadAIGym.sysml
+CHECKING ArrowheadAIGymData.sysml
+CHECKING ArrowheadAuthentication.sysml
+CHECKING ArrowheadBlacklist.sysml
+CHECKING ArrowheadBlacklistData.sysml
+CHECKING ArrowheadCertificateAuthority.sysml
+CHECKING ArrowheadCertificateAuthorityData.sysml
+CHECKING ArrowheadChoreographer.sysml
+CHECKING ArrowheadChoreographerData.sysml
+CHECKING ArrowheadConfiguration.sysml
+CHECKING ArrowheadConfigurationData.sysml
+CHECKING ArrowheadConsumerAuthorization.sysml
+CHECKING ArrowheadCoreData.sysml
+CHECKING ArrowheadDSL.sysml
+CHECKING ArrowheadDataManager.sysml
+CHECKING ArrowheadDataManagerData.sysml
+CHECKING ArrowheadDeviceQoSEvaluator.sysml
+CHECKING ArrowheadDeviceQoSEvaluatorData.sysml
+CHECKING ArrowheadDynamicServiceOrchestration.sysml
+CHECKING ArrowheadEventHandler.sysml
+CHECKING ArrowheadEventHandlerData.sysml
+CHECKING ArrowheadFoundation.sysml
+CHECKING ArrowheadGateTunnel.sysml
+CHECKING ArrowheadGateTunnelData.sysml
+CHECKING ArrowheadGatekeeper.sysml
+CHECKING ArrowheadGatekeeperData.sysml
+CHECKING ArrowheadGraphDBManager.sysml
+CHECKING ArrowheadGraphDBManagerData.sysml
+CHECKING ArrowheadLocalCloudConfigurator.sysml
+CHECKING ArrowheadLocalCloudConfiguratorData.sysml
+CHECKING ArrowheadLocalCloudLibrary.sysml
+CHECKING ArrowheadLocalCloudManager.sysml
+CHECKING ArrowheadLocalCloudManagerData.sysml
+CHECKING ArrowheadOnboarding.sysml
+CHECKING ArrowheadOnboardingData.sysml
+CHECKING ArrowheadPlantDescriptionEngine.sysml
+CHECKING ArrowheadPlantDescriptionEngineData.sysml
+CHECKING ArrowheadServiceRegistry.sysml
+CHECKING ArrowheadSimpleStoreServiceOrchestration.sysml
+CHECKING ArrowheadSoLocalCloudConfigurator.sysml
+CHECKING ArrowheadSoLocalCloudConfiguratorData.sysml
+CHECKING ArrowheadSoSConfigurator.sysml
+CHECKING ArrowheadSoSConfiguratorData.sysml
+CHECKING ArrowheadSysMonitor.sysml
+CHECKING ArrowheadSysMonitorData.sysml
+CHECKING ArrowheadTimeManager.sysml
+CHECKING ArrowheadTimeManagerData.sysml
+CHECKING ArrowheadTranslationManager.sysml
+CHECKING ArrowheadTranslationManagerData.sysml
+ERRORS=0 WARNINGS=0
