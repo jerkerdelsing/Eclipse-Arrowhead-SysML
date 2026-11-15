@@ -14,3 +14,7 @@ Both formats are generated from the same Java code/documentation inventory. They
 The models describe the local 5.3 release candidate; they do not announce an official upstream release. Java sources take precedence for matching controller signatures and registered operation tables. Documentation supplies design intent, source schemas and conditional interfaces. `sources.json` records the exact three release commits and input hashes. Live deployment behavior and exhaustive cross-language semantic equivalence are outside this validation.
 
 Regeneration and comparison commands are in [the SysML v2 guide](SysML-v2/README.md).
+
+## License
+
+This repository is made available under the [Eclipse Public License 2.0](LICENSE) (SPDX: `EPL-2.0`).
